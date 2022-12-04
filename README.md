@@ -1,8 +1,5 @@
 Projektarbete - Företagssida
 
-Gruppindelning: https://docs.google.com/document/d/1Vya8S6QzeckoEufTynyWlXX9HrekPKqDaSgSUNg2_FE/edit?usp=sharing
-
-
 Er uppgift är att skapa en webbplats för ett påhittat företag. Företaget ska sälja en produkt eller tjänst av eget val. 
 
 Skapa en wireframe och/eller mockup i valfritt verktyg för de olika sidorna som ni sedan utgår ifrån under ert arbete. För att underlätta arbetet, börja med att ta fram en företagsprofil:

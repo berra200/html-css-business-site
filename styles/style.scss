@@ -1,0 +1,14 @@
+@layer bulma, special-styles;
+
+@layer bulma {
+    @charset "utf-8";
+    @import "../node_modules/bulma/bulma.sass";
+}
+
+@layer special-styles {
+    
+    @import "./partials/variables";
+    @import "./partials/mixins";
+    @import "./partials/header";
+    @import "./partials/main";
+}

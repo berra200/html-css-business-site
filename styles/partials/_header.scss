@@ -1,0 +1,49 @@
+//!Träffar inte?
+.test {
+    height: 2000px;
+    width: 100%;
+    background-color: pink;
+}
+
+/*Header*/
+//Logan div
+.navbar-brand {
+    background-color: $headerClr;
+    justify-content: center; 
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    @media (width >= 1024px) {
+        // position: static;
+        //! Hur fungera position för hela navigationen vid scroll
+    }
+    .navbar-burger {
+        position: absolute;
+        right: 0;
+    }
+}
+
+//Navigationslänkarna div
+.navbar-menu {
+    .navbar-start{
+        position: fixed; 
+        top: 52px;       
+        width: 100vw;
+        border: 1px solid black;
+        background-color: $headerClr;
+            .navbar-item {
+            border-top: 1px solid black;
+                &.active {
+                    text-decoration: underline;
+                };
+            };
+        @media (width >= 1024px) {
+            @include flex ($direction, space-around, center); 
+            .navbar-item {
+                border: none;
+            };
+        };
+    };
+
+}
+
