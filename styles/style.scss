@@ -6,7 +6,9 @@
 }
 
 @layer special-styles {
+    
     @import "./partials/variables";
     @import "./partials/mixins";
     @import "./partials/header";
+    @import "./partials/main";
 }
