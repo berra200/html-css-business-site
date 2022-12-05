@@ -7,60 +7,31 @@
 
     <title>Anrika Fastigheter - Vi hjälper dig</title>
 
-    <script defer src="index.js"></script>
+    <!-- Fonter + Ikoner -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="./styles/style.css"/>
+    
+    <script defer src="index.js"></script>
+    <script defer src="/pages/partials/Footer.js"></script>
+    <script defer src="/pages/partials/Header.js"></script>
     <!--todo: ikon för webbläsarfönstret-->
 </head>
 <body>
-    <header>
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-                <!--Logga-->  
-                <a class="navbar-item nav-logo" href="index.html">
-                    <img src="./pictures/Logotype.png" width="112" height="28"/>
-                </a>   
-                <!--Hamburgaremeny-->  
-                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </a>
-            </div>
-          
-            <div id="navbarBasicExample" class="navbar-menu">
-                <div class="navbar-start">
-                    <a class="navbar-item" href="index.html">
-                        HEM
-                    </a>
-                    <a class="navbar-item" href="pages/properties.html">
-                        TILL SALU
-                    </a>
-            
-                    <a class="navbar-item" href="pages/testimonials.html">
-                        SÅLDA OBJEKT
-                    </a>
-            
-                    <a class="navbar-item" href="pages/contact.html">
-                        KONTAKT
-                    </a>
-                    <a class="navbar-item" href="pages/about.html">
-                        OM OSS
-                    </a>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <header id="header"></header>
 
     <main>
-        <h1>hem</h1>
-        <div class="test">heh
-            
-        </div>
+        <!-- Syns inte i desktop -->
+        <div class="placeholder">Main content goes here!</div>
     </main>
 
-    <footer>
+<!-- Footer -->
+<!--! OBS! Kontrollera om h3 bör vara annat hX-->
 
-    </footer>
+<footer id="footer"></footer>
 
 </body>
 </html>

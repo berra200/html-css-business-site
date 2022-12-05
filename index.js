@@ -23,17 +23,20 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 // NAV: hittar akutell sida anv. befinner sig på och kastar på klassen "active" på a-taggen.
-//! Fundera på att utesluta loggan, här eller i CSS:en?
 document.addEventListener('DOMContentLoaded', () => {
   let currentPage = location.href;
-    let allNavLinks = document.querySelectorAll(".navbar-item");
+  let allNavLinks = document.querySelectorAll(".page");
 
     // console.log(currentPage);
     // console.log(allNavLinks);
 
     allNavLinks.forEach((link) => {
-        if(link.href === currentPage) {
+      if(link.href === currentPage) {
         link.className += " " + "active";
       }
     });
-  });
+});
+
+
+
+
