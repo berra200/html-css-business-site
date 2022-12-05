@@ -1,0 +1,17 @@
+
+
+
+main div {
+    border: 1px solid black;
+};
+
+
+.property-description {
+    @include flex (space-between, default , column );
+    .spec {
+        @include flex ($justify: space-between);
+        p {
+            background-color: pink;
+        };
+    };
+};
