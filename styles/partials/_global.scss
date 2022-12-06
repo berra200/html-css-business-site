@@ -14,6 +14,9 @@ body {
 .columns {
     margin: 0;
 }
+// .column {
+//     padding: 0;
+// }
 
 h1 {
     font-size: 1.8rem;
@@ -34,3 +37,26 @@ a:hover {
     background-color: none;
     text-decoration: underline;
 }
+
+// .property-img:hover {
+//     transition: transform .5s ease, .5s ease, .5s ease;
+// }
+
+.button {
+    background-color: $buttonClr;
+    // &:hover {
+        //todo: animation
+    // };
+    .small {
+        width: 179px;
+    }
+    .large {
+        width: 295px;
+        @media (width >= $desktop) {
+            width: 353px;
+        }
+    
+    }
+
+
+};
