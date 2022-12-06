@@ -10032,6 +10032,9 @@ label.panel-block:hover {
   h1 {
     font-size: 1.8rem;
   }
+  h2 {
+    font-size: 1.5rem;
+  }
   p {
     font-size: 1rem;
   }
@@ -10046,8 +10049,17 @@ label.panel-block:hover {
     background-color: palegoldenrod;
   }
   main {
-    margin: 24px;
+    margin: 0 24px;
+    padding: 5px 10px;
     background-color: aquamarine;
+  }
+  main h2 {
+    margin-left: 40px;
+    font-weight: 500;
+    font-size: 1.8rem;
+  }
+  main img {
+    border-radius: 10px;
   }
   @media (width >= 769px) {
     main {
@@ -10059,7 +10071,6 @@ label.panel-block:hover {
   @media (width >= 1024px) {
     main {
       background-color: paleturquoise;
-      margin-top: 72px;
     }
   }
   /*Header*/
@@ -10121,9 +10132,6 @@ label.panel-block:hover {
   #footer .fa-brands, #footer .fa-solid {
     color: #FFFFFF;
     width: 1rem;
-  }
-  main div, main {
-    border: 1px solid black;
   }
   .property-img {
     max-width: 100%;

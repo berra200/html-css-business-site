@@ -4,7 +4,18 @@ body {
 }
 
 main {
-    margin: 24px;
+    margin: 0 24px;
+    padding: 5px 10px;
+
+    h2 {
+        margin-left: 40px;
+        font-weight: 500;
+        font-size: 1.8rem;
+    }
+
+    img {
+        border-radius: 10px;
+    }
 
     background-color: aquamarine;
     @media (width >= $tablet) {
@@ -15,6 +26,5 @@ main {
     }
     @media (width >= $desktop) {
         background-color: paleturquoise;
-        margin-top: 72px;
     }
 }
