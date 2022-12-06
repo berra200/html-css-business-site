@@ -9873,6 +9873,26 @@ label.panel-block:hover {
     background-color: none;
     text-decoration: underline;
   }
+  body {
+    background-color: palegoldenrod;
+  }
+  main {
+    margin: 24px;
+    background-color: aquamarine;
+  }
+  @media (width >= 769px) {
+    main {
+      margin-inline: auto;
+      width: min(90%, 70.5rem);
+      background-color: pink;
+    }
+  }
+  @media (width >= 1024px) {
+    main {
+      background-color: paleturquoise;
+      margin-top: 72px;
+    }
+  }
   /*Header*/
   .navbar-brand {
     background-color: #D9D9D9;
@@ -9932,8 +9952,12 @@ label.panel-block:hover {
     color: #FFFFFF;
     width: 1rem;
   }
-  main div {
+  main div, main {
     border: 1px solid black;
+  }
+  .property-img {
+    max-width: 100%;
+    min-height: 100%;
   }
   .property-description {
     display: flex;
