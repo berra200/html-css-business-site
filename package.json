@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/berra200/html-css-business-site/issues"
   },
-  "homepage": "https://github.com/berra200/html-css-business-site#readme"
+  "homepage": "https://github.com/berra200/html-css-business-site#readme",
+  "dependencies": {
+    "bulma-carousel": "^4.0.24"
+  }
 }

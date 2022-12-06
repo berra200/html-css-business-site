@@ -1,0 +1,37 @@
+.hero {
+
+    .hero-body {
+    z-index: -1;
+    }
+
+    .slider-navigation-next,
+    .slider-navigation-previous {
+        background: none;
+        border: none;
+        border-radius: 0;
+        height: 90%;
+        top: 0;
+        margin-top: 3%;
+        width: 60px;
+        box-shadow: none;
+    }
+
+    .hero-item-wrapper {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+
+    .hero-item-text {
+        position: absolute;
+        top: 45%;
+        left: 25%;
+        transform: translate(-50%, -100%);
+        width: 250px;
+    }
+    
+    .slogan {
+        font-weight: 600;
+        font-size: small;
+    }
+}
