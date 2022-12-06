@@ -1,9 +1,15 @@
 
 
 
-main div {
+main div, main {
     border: 1px solid black;
 };
+
+
+.property-img {
+    max-width: 100%;
+    min-height: 100%;
+}
 
 
 .property-description {

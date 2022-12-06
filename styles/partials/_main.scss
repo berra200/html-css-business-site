@@ -1,11 +1,22 @@
-// .placeholder {
-//     height: 500px;
-//     background-color: lightgrey;
-//     margin: 20px;
-//     padding: 10px;
-//     border: 2px solid black;
-// }
+
+body {
+    background-color: palegoldenrod;
+}
 
 main {
-    
+    margin: 24px;
+
+    background-color: aquamarine;
+    @media (width >= $tablet) {
+        margin-inline: auto;
+        width: min(90%, 70.5rem);
+   
+        background-color: pink;
+    }
+    @media (width >= $desktop) {
+        background-color: paleturquoise;
+        margin-top: 72px;
+
+   
+    }
 }
