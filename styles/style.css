@@ -9873,6 +9873,20 @@ label.panel-block:hover {
     background-color: none;
     text-decoration: underline;
   }
+  .button {
+    background-color: #d6c2b1;
+  }
+  .button .small {
+    width: 179px;
+  }
+  .button .large {
+    width: 295px;
+  }
+  @media (width >= 1024px) {
+    .button .large {
+      width: 353px;
+    }
+  }
   body {
     background-color: palegoldenrod;
   }
@@ -9882,9 +9896,10 @@ label.panel-block:hover {
   }
   @media (width >= 769px) {
     main {
+      padding: 32px;
       margin-inline: auto;
       width: min(90%, 70.5rem);
-      background-color: pink;
+      background-color: rgb(244, 207, 243);
     }
   }
   @media (width >= 1024px) {
@@ -9952,26 +9967,84 @@ label.panel-block:hover {
     color: #FFFFFF;
     width: 1rem;
   }
-  main div, main {
-    border: 1px solid black;
-  }
-  .property-img {
-    max-width: 100%;
-    min-height: 100%;
-  }
-  .property-description {
+  .object-grid {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: default;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
   }
-  .property-description .spec {
+  @media (width >= 769px) {
+    .object-grid {
+      gap: 65px;
+    }
+  }
+  .object-grid .object-row .column {
+    padding: 0;
+  }
+  .object-grid .object-row .column .holder {
+    margin-top: 30px;
+    border: 1px solid black;
+  }
+  .object-grid .object-row .object-img {
+    max-width: 100%;
+    min-height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    vertical-align: middle;
+  }
+  .object-grid .object-row .object-img:hover {
+    cursor: pointer;
+  }
+  .object-grid .object-row .property-description {
+    background-color: palegreen;
+    border: solid 1px black;
+    text-align: center;
+  }
+  .object-grid .object-row .property-description .object-text {
+    display: none;
+  }
+  @media (width >= 769px) {
+    .object-grid .object-row .property-description .object-text {
+      display: block;
+      background-color: rgb(254, 145, 72);
+    }
+  }
+  .object-grid .object-row .property-description .city {
+    display: flex;
+    flex-direction: default;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+  }
+  .object-grid .object-row .property-description .city .logo-mini {
+    height: 20px;
+  }
+  @media (width >= 769px) {
+    .object-grid .object-row .property-description .city {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  }
+  .object-grid .object-row .property-description .spec {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
   }
-  .property-description .spec p {
-    background-color: pink;
+  @media (width >= 769px) {
+    .object-grid .object-row .property-description {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: default;
+      gap: 20px;
+      text-align: start;
+    }
+    .object-grid .object-row .property-description .holder {
+      margin-top: 0px;
+    }
   }
 }/*# sourceMappingURL=style.css.map */
