@@ -1,23 +1,61 @@
+//todo: gap mellan bild description, dekstop - utan att allt förskjuts >:(
 
-
-
-main div, main {
-    border: 1px solid black;
-};
-
-
-.property-img {
-    max-width: 100%;
-    min-height: 100%;
-}
-
-
-.property-description {
-    @include flex (space-between, default , column );
-    .spec {
-        @include flex ($justify: space-between);
-        p {
-            background-color: pink;
+.object-grid {
+    @include flex ($direction: column);
+    gap: 30px;
+    @media (width >= $tablet) {
+        gap: 65px;
+    }
+    .object-row {
+        //! Problem: förskjuter allt i desktop, så marginen fuckas, inline margin gör samma
+        // gap: 20px;
+        .column {
+            padding: 0;
+            .holder {
+                margin-top: 30px;
+                border: 1px solid black;
+            };
+        }
+        .object-img {
+            @include imgAdjuster();
+            &:hover {
+                cursor: pointer;
+            }
         };
-    };
-};
+    
+        
+        .property-description {
+            background-color: palegreen;
+            border: solid 1px black;
+            text-align: center;
+            .object-text {
+                display:none;
+                @media (width >= $tablet) {
+                    display: block;
+                    background-color: rgb(254, 145, 72) ;
+                };
+            };
+            .city {
+                @include flex (center, center, default);
+                gap: 1.25rem;
+                .logo-mini {
+                    height: 20px;
+                };
+                @media (width >= $tablet) {
+                    @include flex (flex-start);
+                };
+            };
+            .spec {
+                @include flex (space-between, center);
+            };
+            @media (width >= $tablet) {
+                @include flex (space-between, default , column );
+                gap: 20px;
+                text-align: start;
+                .holder {
+                    margin-top: 0px;
+                };
+            };
+        };
+    }
+}
