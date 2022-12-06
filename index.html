@@ -12,21 +12,87 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <!-- <link rel="stylesheet" href="node_modules/bulma-carousel/dist/css/bulma-carousel.min.css"> -->
     <link rel="stylesheet" href="./styles/style.css"/>
     
+    
+    <script src="node_modules/bulma-carousel/dist/js/bulma-carousel.min.js"></script>
     <script defer src="index.js"></script>
     <script defer src="/pages/partials/Footer.js"></script>
     <script defer src="/pages/partials/Header.js"></script>
+    
     <!--todo: ikon för webbläsarfönstret-->
 </head>
 <body>
     <header id="header"></header>
 
-    <main>
-        <!-- Syns inte i desktop -->
-        <div class="placeholder">Main content goes here!</div>
-    </main>
+    <section class="hero is-large has-carousel">
+        <div id="carousel" class="hero-carousel">
+            <div class="item-1">
+                <!-- Slide Content -->
+                <div class="hero-item-wrapper">
+                    <img 
+                        src="/pictures/P1.jpeg" 
+                        alt=""
+                        width="100%"
+                    >
+                    <div class="hero-item-text">
+                        <p class="slogan">LÄNGTAR DU HEM?</p>
+                        <h1>VI HJÄLPER DIG</h1>
+                        <p>Vi har alltid ett digert utbud av anrika bostäder, både officiella och inofficiella. Kontakta oss för mer info.</p>
+                        <a href="./pages/properties.html" class="button is-light mt-3">HITTA DITT NYA HEM</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item-2">
+                <!-- Slide Content -->
+                <div class="hero-item-wrapper">
+                    <img 
+                        src="/pictures/P1.jpeg" 
+                        alt=""
+                        width="100%"
+                    >
+                    <div class="hero-item-text">
+                        <p class="slogan">SNABB AFFÄR TILL BÄSTA PRIS</p>
+                        <h1>VI HJÄLPER DIG</h1>
+                        <p>Med ett stort register av köpstarka kunder är vi med dig från annons till avslut.</p>
+                        <a href="./pages/contact.html" class="button is-light mt-3">KOSTNADSFRI VÄRDERING</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item-3">
+                <!-- Slide Content -->
+                <div class="hero-item-wrapper">
+                    <img 
+                        src="/pictures/P1.jpeg" 
+                        alt=""
+                        width="100%"
+                    >
+                    <div class="hero-item-text">
+                        <p class="slogan">LITA INTE PÅ OSS</p>
+                        <h1>LITA PÅ DINA GRANNAR</h1>
+                        <p>Med ett sekel i backspegeln har vi XXxxxxxXXXXXxxxxxX CCCC CcxXcvxbn >vcshvbföadfahdu</p>
+                        <a href="./pages/testimonials.html'" class="button is-light mt-3">HITTA DITT NYA HEM</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-head"></div>
+        <div class="hero-body"></div>
+        <div class="hero-foot"></div>
+    </section>
+    <script>
+        bulmaCarousel.attach('#carousel', {
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 8000,
+            duration: 3000,
+        });
+    </script>
+
+    <!-- <main>
+
+    </main> -->
 
 <!-- Footer -->
 <!--! OBS! Kontrollera om h3 bör vara annat hX-->
