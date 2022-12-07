@@ -10034,6 +10034,7 @@ label.panel-block:hover {
   }
   h2 {
     font-size: 1.5rem;
+    font-weight: 500;
   }
   p {
     font-size: 1rem;
@@ -10067,11 +10068,6 @@ label.panel-block:hover {
     padding: 20px 10px;
     background-color: aquamarine;
   }
-  main h2 {
-    margin-left: 40px;
-    font-weight: 500;
-    font-size: 1.8rem;
-  }
   main img {
     border-radius: 10px;
   }
@@ -10086,7 +10082,7 @@ label.panel-block:hover {
   @media (width >= 1024px) {
     main {
       background-color: paleturquoise;
-      padding-top: 40px;
+      padding-top: 60px;
     }
   }
   /*Header*/
