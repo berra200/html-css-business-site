@@ -7,11 +7,6 @@ main {
     margin: 0 24px;
     padding: 20px 10px;
 
-    h2 {
-        margin-left: 40px;
-        font-weight: 500;
-        font-size: 1.8rem;
-    }
 
     img {
         border-radius: 10px;
@@ -29,6 +24,6 @@ main {
     }
     @media (width >= $desktop) {
         background-color: paleturquoise;
-        padding-top: 40px;
+        padding-top: 60px;
     }
 }
