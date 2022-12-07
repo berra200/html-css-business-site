@@ -110,5 +110,3 @@ footer.innerHTML = `
         </div>
     </div>
 </div>`
-
-document.querySelector("#footer").append(footer)
