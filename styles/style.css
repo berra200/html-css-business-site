@@ -10086,7 +10086,7 @@ label.panel-block:hover {
   @media (width >= 1024px) {
     main {
       background-color: paleturquoise;
-      margin-top: 40px;
+      padding-top: 40px;
     }
   }
   /*Header*/
