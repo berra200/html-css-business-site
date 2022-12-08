@@ -47,5 +47,3 @@ header.innerHTML = `
         </ul>
     </div>
 </nav>`
-
-document.querySelector("#header").append(header)

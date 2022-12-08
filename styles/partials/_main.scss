@@ -4,17 +4,27 @@ body {
 }
 
 main {
-    margin: 24px;
+    margin: 0 24px;
+    padding: 20px 10px;
+
+
+    img {
+        border-radius: 10px;
+    }
+
+    background-color: aquamarine;
     @media (width >= $tablet) {
-        padding:  32px;
+        padding:  20 32px;
 
         margin-inline: auto;
         width: min(90%, 70.5rem);
    
     }
     @media (width >= $desktop) {
-        margin-top: 72px;
+  //   margin-top: 72px;
 
    
+        background-color: paleturquoise;
+        padding-top: 60px;
     }
 }
