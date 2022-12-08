@@ -35,21 +35,25 @@ a:hover {
 //     transition: transform .5s ease, .5s ease, .5s ease;
 // }
 
-.button {
+.btn-small {
     background-color: $buttonClr;
+    border-radius: 0;
+    border: none;
+    width: 179px;
+    height: 40px;
+    
+    
     // &:hover {
         //todo: animation
     // };
-    .small {
-        width: 179px;
-    }
-    .large {
-        width: 295px;
-        @media (width >= $desktop) {
-            width: 353px;
-        }
     
+};
+
+//! Används den?
+.btn-large {
+    width: 295px;
+    @media (width >= $desktop) {
+        width: 353px;
     }
 
-
-};
+}

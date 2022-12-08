@@ -9873,17 +9873,18 @@ label.panel-block:hover {
     background-color: none;
     text-decoration: underline;
   }
-  .button {
+  .btn-small {
     background-color: #d6c2b1;
-  }
-  .button .small {
+    border-radius: 0;
+    border: none;
     width: 179px;
+    height: 40px;
   }
-  .button .large {
+  .btn-large {
     width: 295px;
   }
   @media (width >= 1024px) {
-    .button .large {
+    .btn-large {
       width: 353px;
     }
   }
@@ -9892,19 +9893,16 @@ label.panel-block:hover {
   }
   main {
     margin: 24px;
-    background-color: aquamarine;
   }
   @media (width >= 769px) {
     main {
       padding: 32px;
       margin-inline: auto;
       width: min(90%, 70.5rem);
-      background-color: rgb(244, 207, 243);
     }
   }
   @media (width >= 1024px) {
     main {
-      background-color: paleturquoise;
       margin-top: 72px;
     }
   }
@@ -9997,8 +9995,6 @@ label.panel-block:hover {
     cursor: pointer;
   }
   .object-grid .object-row .property-description {
-    background-color: palegreen;
-    border: solid 1px black;
     text-align: center;
   }
   .object-grid .object-row .property-description .object-text {
@@ -10007,7 +10003,6 @@ label.panel-block:hover {
   @media (width >= 769px) {
     .object-grid .object-row .property-description .object-text {
       display: block;
-      background-color: rgb(254, 145, 72);
     }
   }
   .object-grid .object-row .property-description .city {
@@ -10046,5 +10041,30 @@ label.panel-block:hover {
     .object-grid .object-row .property-description .holder {
       margin-top: 0px;
     }
+  }
+  .office div {
+    border: 1px solid black;
+  }
+  .contact-form form {
+    border: 1px solid black;
+  }
+  .contact-form form .field {
+    padding: 0.75rem;
+  }
+  .contact-form form .field .select, .contact-form form .field select {
+    width: 100%;
+  }
+  .contact-form form .field input, .contact-form form .field select, .contact-form form .field option, .contact-form form .field textarea {
+    border-radius: 0;
+  }
+  .contact-form form .field input:focus, .contact-form form .field select:focus, .contact-form form .field option:focus, .contact-form form .field textarea:focus {
+    border-color: #1ee1e1;
+    background-color: #dbfafa;
+  }
+  .contact-form form .field input[type=checkbox] {
+    accent-color: #1ee1e1;
+  }
+  .contact-form form .field .small-btn {
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */

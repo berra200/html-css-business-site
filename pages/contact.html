@@ -24,7 +24,110 @@
     <header id="header"></header> 
     
     <main>
-        <h1>Kontakta oss</h1>
+        <h1>KONTAKT</h1>
+        <div class="office columns">
+            <div class="column">
+                <img src="/pictures/office.jpeg" alt="Anrika Fastigheters kontorsbyggnad"/>
+            </div>
+            <div class="contact-details column">
+                <div class="phone">
+                    <p><span>TELEFON</span></p>
+                    <p>070-734 34 34</p>
+                </div>
+                <div class="email">
+                    <p><span>EMAIL</span></p>
+                    <p>Info@anrikafastighter.se</p>
+                </div>
+                <div class="fax">
+                    <p><span>FAX</span></p>
+                    <p>08-343 93 83</p>
+                </div>
+                <div class="adress">
+                    <p><span>ADRESS</span></p>
+                    <p>Grevturegatan 6</p>
+                    <p>114 46 Stockholm</p>
+                </div>
+            </div>
+
+        </div>
+        <!-- FORM -->
+        <div class="contact-form">
+            <!--todo: RUBRIK -->
+            <!--todo: när man skickar form få meddelande -->
+            <!--todo: aria labels -->
+            <!--todo: Styling: -->
+                <!--todo: när input fält är i fokus -->
+                <!--todo: accentcolor på bakgrunden -->
+                <!--todo: ikoner -->
+
+            <!--todo: om man väljer värdering -> så kommer fler alternativ upp: adress, kvm, ROK osv-->
+
+            <h2>MEDDELA OSS DIREKT</h2>
+
+            <!-- BESKRIVNING?-->
+            <form action="#">
+                <div class="columns">
+                    <div class="field column">
+                        <label class="label" for="fName">Förnamn<sup>*</sup></label>
+                        <div class="control">
+                            <input class="input" id="fName" name="fName" type="text" placeholder="Förnamn" autocomplete="given-name" required/>
+                        </div>
+                    </div>
+                    <div class="field column">
+                        <label class="label" for="lName"> Efternamn<sup>*</sup></label>
+                        <div class="control">
+                            <input class="input" id="lName" name="lName" type="text" placeholder="Efternamn" autocomplete="family-name" required/>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="field column is-7">
+                        <label class="label" for="emailInput"> E-post<sup>*</sup></label>
+                        <div class="control">
+                            <input class="input" name="emailInput" id="emailInput" type="email" placeholder="E-post" autocomplete="email" required/>
+                        </div>
+                    </div>
+                    <div class="field column is-5">
+                        <label class="label" for="subjectDropdown">Ärende</label>
+                        <div class="control">
+                            <div class="select">
+                                <select name="subjectDropdown" id="subjectDropdown" onchange="checkValuation()">
+                                    <option value="1"disabled selected hidden>Välj ärende</option>
+                                    <option value="2">Frågor om företaget</option>
+                                    <option value="3">Synpunkter på hemsidan</option>
+                                    <option value="4">Kostnadsfri värdering</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label" for="message">Meddelande:</label>
+                    <div class="control">
+                        <textarea class="textarea" id="message" placeholder="Berätta hur vi kan hjälpa dig"></textarea>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <input type="checkbox" name="terms" id="terms" required/>
+                        <label for="terms">Jag godkänner Anrika Fastigheters användarvillkor och personuppgiftspolicy<sup>*</sup></label>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="control">
+                        <button class="button btn-small" type="submit">SKICKA</button>
+                    </div>
+                </div>
+
+
+
+                <!-- Forms legend -->
+            </form>
+
+        </div>
+
     </main>
 
     <footer id="footer"></footer>
