@@ -69,13 +69,13 @@ footer.innerHTML = `
             </div>
             <div class="columns is-mobile">
                 <div class="column is-narrow">
-                    <a href="mailto:info@anrika.se">
+                    <a href="mailto:info@anrikafastigheter.se">
                         <i class="fa-solid fa-envelope"></i>
                     </a>
                 </div>
                 <div class="column is-narrow">
-                    <a href="mailto:info@anrika.se">
-                        <p>info@anrika.se</p>
+                    <a href="mailto:info@anrikafastigheter.se">
+                        <p>info@anrikafastigheter.se</p>
                     </a>
                 </div>
             </div>

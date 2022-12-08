@@ -11,9 +11,3 @@
     object-fit: $fit;
     vertical-align: $vAlign;
 }
-
-
-//?
-@mixin color ($color: red) {
-    background-color: $color;
-};
