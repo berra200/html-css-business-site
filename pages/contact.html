@@ -21,44 +21,46 @@
 
 </head>
 <body>
-    <header id="header"></header> 
+    <header id="header">
+
+    </header> 
     
     <main>
-        <h1>KONTAKT</h1>
         <div class="office columns">
             <div class="column">
                 <img src="/pictures/office.jpeg" alt="Anrika Fastigheters kontorsbyggnad"/>
             </div>
-            <div class="contact-details column">
-                <div class="phone">
-                    <p><span>TELEFON</span></p>
-                    <p>070-734 34 34</p>
-                </div>
-                <div class="email">
-                    <p><span>EMAIL</span></p>
-                    <p>Info@anrikafastighter.se</p>
-                </div>
-                <div class="fax">
-                    <p><span>FAX</span></p>
-                    <p>08-343 93 83</p>
-                </div>
-                <div class="adress">
-                    <p><span>ADRESS</span></p>
-                    <p>Grevturegatan 6</p>
-                    <p>114 46 Stockholm</p>
+            <div class="column">
+                <h1>KONTAKT</h1>
+                <div class="contact-details">
+                    <div class="phone">
+                        <p><span>TELEFON</span></p>
+                        <p>070-734 34 34</p>
+                    </div>
+                    <div class="email">
+                        <p><span>E-POST</span> </p>
+                        <p>info@anrikafastighter.se</p>
+                    </div>
+                    <div class="fax">
+                        <p><span>FAX</span></p>
+                        <p>08-343 93 83</p>
+                    </div>
+                    <div class="adress">
+                        <p><span>ADRESS</span></p>
+                        <address>
+                            Grevturegatan 6
+                            <br/>114 46 Stockholm
+                        </address>
+                    </div>
                 </div>
             </div>
 
         </div>
-        <!-- FORM -->
-        <div class="contact-form">
-            <!--todo: RUBRIK -->
+<!-- FORM -->
+        <a class="anchor" id="contact-anchor"></a>
+        <div class="contact-form" >
             <!--todo: när man skickar form få meddelande -->
             <!--todo: aria labels -->
-            <!--todo: Styling: -->
-                <!--todo: när input fält är i fokus -->
-                <!--todo: accentcolor på bakgrunden -->
-                <!--todo: ikoner -->
 
             <!--todo: om man väljer värdering -> så kommer fler alternativ upp: adress, kvm, ROK osv-->
 
@@ -92,7 +94,7 @@
                         <div class="control">
                             <div class="select">
                                 <select name="subjectDropdown" id="subjectDropdown" onchange="checkValuation()">
-                                    <option value="1"disabled selected hidden>Välj ärende</option>
+                                    <option value="1" disabled selected hidden>Välj ärende</option>
                                     <option value="2">Frågor om företaget</option>
                                     <option value="3">Synpunkter på hemsidan</option>
                                     <option value="4">Kostnadsfri värdering</option>
@@ -116,7 +118,7 @@
                 </div>
 
                 <div class="field">
-                    <div class="control">
+                    <div class="control has-text-centered">
                         <button class="button btn-small" type="submit">SKICKA</button>
                     </div>
                 </div>

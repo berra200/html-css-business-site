@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Till salu - Anrika Fastigheter</title>
 
     <!-- FONTER & IKONER -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     
@@ -20,106 +20,232 @@
     <script defer src="/pages/partials/Header.js"></script>
     <!--todo: ikon för webbläsarfönstret-->
 
+
 </head>
 <body>
     <header id="header"></header> 
 
 <!-- todo: sätta max-height på bilderna?-->
-<!-- todo: gap mellan bilder och text-div-->
     <main>
         <h1>VÅRA HEM</h1>
-        <!--OBJEKT-->        
         <div class="object-grid">
-            <!--BILD-->
-            <div class="columns object-row">
-                <div class="column  is-6-tablet is-5-desktop property-img ">
-                    <img class="object-img" src="../pictures/P1.jpeg" alt="#"/>
-                </div>
-                <!--SPEC-->
-                <div class="column is-6-tablet is-7-desktop property-description ">
-                    <div class="holder">
-                        <h2 class="sub--heading">WARFVINGES VÄG,
-                            KUNGSHOLMEN</h2>
+            <ul>
+    <!--OBJEKT 1-->
+                <li>
+                    <div class="columns object-row">
+                        <!--BILD-->
+                        <div class="column is-5-tablet property-img ">
+                            <img class="object-img" src="../pictures/P1.jpeg" alt="#"/>
+                        </div>
+                        <!--SPEC-->
+                        <div class="column is-7-tsblet property-description">
+                            <div class="holder">
+                                <h2>WARFVINGES VÄG,
+                                    KUNGSHOLMEN</h2>
+                            </div>
+                            <div class="city holder">
+                                    <img class="logo-mini" src="../pictures/mini-logo.png" alt="#">
+                                    <p>Stockholm</p>
+                            </div>
+                            <div class="spec holder">
+                                <p>89 KVM</p>
+                                <p>4 995 000</p>
+                                <p>3 ROK</p>
+                            </div>
+                            <div class="object-text holder">
+                                <p>Lorem ipsum dolor sit amet consectetur. Interdum ac ultrices aenean ac cursus. Neque at dictum hendrerit id eget ut leo ante. Molestie arcu amet integer tortor nibh. Lorem ipsum dolor sit amet consectetur. Interdum ac ultrices aenean ac cursus.</p>
+                            </div>
+                            <div class="holder">
+                                <button class="button btn-small">
+                                    LÄGG BUD
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="city holder">
-                            <img class="logo-mini" src="../pictures/mini-logo.png" alt="#">
-                            <p>Stockholm</p>
+                </li>
+    
+    <!-- OBJEKT 2 -->
+    
+                <li>
+                    <div class="columns object-row">
+                        <!--BILD-->
+                        <div class="column is-5-tablet property-img ">
+                            <img class="object-img" src="../pictures/P2.jpeg" alt="#"/>
+                        </div>
+                        <!--SPEC-->
+                        <div class="column is-7-tsblet property-description">
+                            <div class="holder">
+                                <h2>WARFVINGES VÄG,
+                                    KUNGSHOLMEN</h2>
+                            </div>
+                            <div class="city holder">
+                                    <img class="logo-mini" src="../pictures/mini-logo.png" alt="#">
+                                    <p>Stockholm</p>
+                            </div>
+                            <div class="spec holder">
+                                <p>89 KVM</p>
+                                <p>4 995 000</p>
+                                <p>3 ROK</p>
+                            </div>
+                            <div class="object-text holder">
+                                <p>Lorem ipsum dolor sit amet consectetur. Interdum ac ultrices aenean ac cursus. Neque at dictum hendrerit id eget ut leo ante. Molestie arcu amet integer tortor nibh. Lorem ipsum dolor sit amet consectetur. Interdum ac ultrices aenean ac cursus.</p>
+                            </div>
+                            <div class="holder">
+                                <button class="button btn-small">
+                                    LÄGG BUD
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="spec holder">
-                        <p>89 KVM</p>
-                        <p>4 995 000</p>
-                        <p>3 ROK</p>
+                </li>
+    
+    
+    <!-- OBJEKT 3 -->
+    
+                <li>
+                    <div class="columns object-row">
+                        <!--BILD-->
+                        <div class="column is-5-tablet property-img ">
+                            <img class="object-img" src="../pictures/P3.jpeg" alt="#"/>
+                        </div>
+                        <!--SPEC-->
+                        <div class="column is-7-tsblet property-description">
+                            <div class="holder">
+                                <h2>WARFVINGES VÄG,
+                                    KUNGSHOLMEN</h2>
+                            </div>
+                            <div class="city holder">
+                                    <img class="logo-mini" src="../pictures/mini-logo.png" alt="#">
+                                    <p>Stockholm</p>
+                            </div>
+                            <div class="spec holder">
+                                <p>89 KVM</p>
+                                <p>4 995 000</p>
+                                <p>3 ROK</p>
+                            </div>
+                            <div class="object-text holder">
+                                <p>Lorem ipsum dolor sit amet consectetur. Interdum ac ultrices aenean ac cursus. Neque at dictum hendrerit id eget ut leo ante. Molestie arcu amet integer tortor nibh. Lorem ipsum dolor sit amet consectetur. Interdum ac ultrices aenean ac cursus.</p>
+                            </div>
+                            <div class="holder">
+                                <button class="button btn-small">
+                                    LÄGG BUD
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="object-text holder">
-                        <p>Lorem ipsum dolor sit amet consectetur. Interdum ac ultrices aenean ac cursus. Neque at dictum hendrerit id eget ut leo ante. Molestie arcu amet integer tortor nibh. Lorem ipsum dolor sit amet consectetur. Interdum ac ultrices aenean ac cursus.</p>
+                </li>
+     <!-- OBJEKT 4 -->
+    
+                <li>
+                    <div class="columns object-row">
+                        <!--BILD-->
+                        <div class="column is-5-tablet property-img ">
+                            <img class="object-img" src="../pictures/P4.jpeg" alt="#"/>
+                        </div>
+                        <!--SPEC-->
+                        <div class="column is-7-tsblet property-description">
+                            <div class="holder">
+                                <h2>WARFVINGES VÄG,
+                                    KUNGSHOLMEN</h2>
+                            </div>
+                            <div class="city holder">
+                                    <img class="logo-mini" src="../pictures/mini-logo.png" alt="#">
+                                    <p>Stockholm</p>
+                            </div>
+                            <div class="spec holder">
+                                <p>89 KVM</p>
+                                <p>4 995 000</p>
+                                <p>3 ROK</p>
+                            </div>
+                            <div class="object-text holder">
+                                <p>Lorem ipsum dolor sit amet consectetur. Interdum ac ultrices aenean ac cursus. Neque at dictum hendrerit id eget ut leo ante. Molestie arcu amet integer tortor nibh. Lorem ipsum dolor sit amet consectetur. Interdum ac ultrices aenean ac cursus.</p>
+                            </div>
+                            <div class="holder">
+                                <button class="button btn-small">
+                                    LÄGG BUD
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="holder">
-                        <button class="button btn-small">
-                            LÄGG BUD
-                        </button>
+                </li>
+    
+    <!-- OBJEKT 5 -->
+    
+                <li>
+                    <div class="columns object-row">
+                        <!--BILD-->
+                        <div class="column is-5-tablet property-img ">
+                            <img class="object-img" src="../pictures/P5.jpeg" alt="#"/>
+                        </div>
+                        <!--SPEC-->
+                        <div class="column is-7-tsblet property-description">
+                            <div class="holder">
+                                <h2>WARFVINGES VÄG,
+                                    KUNGSHOLMEN</h2>
+                            </div>
+                            <div class="city holder">
+                                    <img class="logo-mini" src="../pictures/mini-logo.png" alt="#">
+                                    <p>Stockholm</p>
+                            </div>
+                            <div class="spec holder">
+                                <p>89 KVM</p>
+                                <p>4 995 000</p>
+                                <p>3 ROK</p>
+                            </div>
+                            <div class="object-text holder">
+                                <p>Lorem ipsum dolor sit amet consectetur. Interdum ac ultrices aenean ac cursus. Neque at dictum hendrerit id eget ut leo ante. Molestie arcu amet integer tortor nibh. Lorem ipsum dolor sit amet consectetur. Interdum ac ultrices aenean ac cursus.</p>
+                            </div>
+                            <div class="holder">
+                                <button class="button btn-small">
+                                    LÄGG BUD
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="columns  object-row">
-                <div class="column  is-6-tablet is-5-desktop property-img ">
-                    <img class="object-img" src="../pictures/P1.jpeg" alt="#"/>
-                </div>
-                <!--SPEC-->
-                <div class="column is-6-tablet is-7-desktop property-description ">
-                    <div class="holder">
-                        <h2 class="sub--heading">WARFVINGES VÄG,
-                            KUNGSHOLMEN</h2>
+                </li>
+    
+    <!-- OBJEKT 6 -->
+    
+                <li>
+                    <div class="columns object-row">
+                        <!--BILD-->
+                        <div class="column is-5-tablet property-img ">
+                            <img class="object-img" src="../pictures/P6.jpeg" alt="#"/>
+                        </div>
+                        <!--SPEC-->
+                        <div class="column is-7-tsblet property-description">
+                            <div class="holder">
+                                <h2>WARFVINGES VÄG,
+                                    KUNGSHOLMEN</h2>
+                            </div>
+                            <div class="city holder">
+                                    <img class="logo-mini" src="../pictures/mini-logo.png" alt="#">
+                                    <p>Stockholm</p>
+                            </div>
+                            <div class="spec holder">
+                                <p>89 KVM</p>
+                                <p>4 995 000</p>
+                                <p>3 ROK</p>
+                            </div>
+                            <div class="object-text holder">
+                                <p>Lorem ipsum dolor sit amet consectetur. Interdum ac ultrices aenean ac cursus. Neque at dictum hendrerit id eget ut leo ante. Molestie arcu amet integer tortor nibh. Lorem ipsum dolor sit amet consectetur. Interdum ac ultrices aenean ac cursus.</p>
+                            </div>
+                            <div class="holder">
+                                <button class="button btn-small">
+                                    LÄGG BUD
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="city holder">
-                            <img class="logo-mini" src="../pictures/mini-logo.png" alt="#">
-                            <p>Stockholm</p>
-                    </div>
-                    <div class="spec holder">
-                        <p>89 KVM</p>
-                        <p>4 995 000</p>
-                        <p>3 ROK</p>
-                    </div>
-                    <div class="object-text holder">
-                        <p>Lorem ipsum dolor sit amet consectetur. Interdum ac ultrices aenean ac cursus. Neque at dictum hendrerit id eget ut leo ante. Molestie arcu amet integer tortor nibh. Lorem ipsum dolor sit amet consectetur. Interdum ac ultrices aenean ac cursus.</p>
-                    </div>
-                    <div class="holder">
-                        <button class="button btn-small">
-                            LÄGG BUD
-                        </button>
-                    </div>
-                </div>
-            </div>       
-        </div>
+                </li>
+    
+            </ul>
 
+        </div>  
 
-
-        <!-- <section class="section">
-            <div class="container">
-                <div class="columns is-variable-is-8">
-                    <div class="column" style="border: 1px solid red; background-color: blue;">
-                      First column
-                    </div>
-                    <div class="column" style="border: 1px solid blue">
-                      Second column
-                    </div>
-                    <div class="column">
-                      Third column
-                    </div>
-                    <div class="column">
-                      Fourth column
-                    </div>
-                  </div>
-            </div>
-        </section> -->
     </main>
     
 
-
-
-
-
-
-<!--! Ändra footer + klass om vi gör en annan-->
     <footer id="footer"></footer> 
 
 </body>

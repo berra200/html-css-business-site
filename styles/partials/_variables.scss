@@ -3,10 +3,9 @@
 //! Defaultvärden?
 
 $headerClr: #D9D9D9;
-
 $backgroundClr: #EAE7DC;
 $selected: #D8C3A5;
-$headingClr: #000000;
+$textClr: #000000;
 $logoClr: #8E8D8A;
 // $buttonClr: #E5E5E5;
 $buttonClr: #d6c2b1;
@@ -18,16 +17,19 @@ $focusClr: #dbfafa;
 
 
 //Fonter:
-//! Deafaultvärden?
-$headingFont: "Libre Baskerville", sans-serif ;
-$bodyTextFont: "Libre Franklin", sans-serif;
+//! Fler deafaultvärden?
+$family-primary: "Libre Baskerville", sans-serif;
+$family-secondary: "Libre Franklin", sans-serif;
+$headingFont: "Libre Baskerville",  ;
+$bodyTextFont: "Libre Franklin", ;
 
-//Fontstorlekar?
+//padding
 
+// $outerLayer: 12px;
+// $innerLayer: 8px;
 
 //Breakpoints
-$tablet: 769px;
-$desktop: 1024px;
-$widescreen: 1216px;
-$fullHD: 1408px; 
+$tablet: "width >= 769px";
+$desktop: "width >= 1024px";
+
 

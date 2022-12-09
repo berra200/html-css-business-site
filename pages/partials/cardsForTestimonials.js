@@ -20,7 +20,16 @@ for (let i = 0; i < 9; i++) {
             <img src="/pictures/P1.jpeg">
         </figure>
         <h3>WARFVINGES VÄG, KUNGSHOLMEN</h3>
-        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-        <p>“Snabb och smidig affär”</p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <figure>
+            <blockquote>
+                <p>“Snabb och smidig affär”</p>
+            </blockquote>
+            <figcaption><cite>Lena Andersson</cite></figcaption>
+        </figure>
     </article>`
 }

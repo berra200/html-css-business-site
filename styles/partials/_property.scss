@@ -1,36 +1,41 @@
-//todo: gap mellan bild description, desktop - utan att allt förskjuts >:(
-
     .object-grid {
         @include flex ($direction: column);
-        gap: 30px;
-        @media (width >= $tablet) {
-            gap: 65px;
-        }
+        gap: 24px;
         .object-row {
-            //! Problem: förskjuter allt i desktop, så marginen fuckas, inline margin gör samma
-            // gap: 20px;
+            border-bottom: 1px solid $textClr;
             .column {
-                padding: 0;
                 .holder {
-                    margin-top: 30px;
-                    border: 1px solid black;
+                    margin-top: 12px;
+                    // border: 1px solid black;
                 };
             }
             .object-img {
-                @include imgAdjuster();
+                //! Funkar ej
+                // @include imgAdjuster();
+                width: 100%;
+                min-height: 100%;
+                object-fit: cover;
+                vertical-align: middle;
+                
+               
+               
+            
                 &:hover {
                     cursor: pointer;
                 }
+                @media ($tablet) {
+                    max-height: 250px;
+                }
             };
-        
-            
+                   
             .property-description {
                 text-align: center;
+
                 .object-text {
-                    display:none;
-                    @media (width >= $tablet) {
-                        display: block;
-                    };
+                    // display:none;
+                    // @media ($tablet) {
+                    //     display: block;
+                    // };
                 };
                 .city {
                     @include flex (center, center, default);
@@ -38,16 +43,16 @@
                     .logo-mini {
                         height: 20px;
                     };
-                    @media (width >= $tablet) {
+                    @media ($tablet) {
                         @include flex (flex-start);
                     };
                 };
                 .spec {
                     @include flex (space-between, center);
                 };
-                @media (width >= $tablet) {
-                    @include flex (space-between, default , column );
-                    gap: 20px;
+                @media ($tablet) {
+                    @include flex (space-between, default , column);
+                    // gap: 12px;
                     text-align: start;
                     .holder {
                         margin-top: 0px;
