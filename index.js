@@ -60,4 +60,3 @@ function checkValuation() {
 // if (valuation.value == selectcard) {
 //     alert("Please select a card type");
 // }
-=======

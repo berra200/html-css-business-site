@@ -9,6 +9,6 @@ for (let i = 0; i < 6; i++) {
         </figure>
         <h3>Anders Andersson</h3>
         <h4>VD & GRUNDARE</h4>
-        <p>anders.andersson@anrika.se</p>
+        <p>anders.andersson@anrikafastigheter.se</p>
     </article>`
 }

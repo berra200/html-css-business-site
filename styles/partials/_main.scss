@@ -1,30 +1,30 @@
 
-body {
-    background-color: palegoldenrod;
-}
 
 main {
     margin: 0 24px;
-    padding: 20px 10px;
+    background-color: $neutralClr;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 24px 12px;
+
+    h2 {
+        font-family: $family-primary
+    }
 
 
     img {
-        border-radius: 10px;
+        // border-radius: 10px;
     }
 
-    background-color: aquamarine;
-    @media (width >= $tablet) {
-        padding:  20 32px;
+    // background-color: aquamarine;
+    @media ($tablet) {
+        padding: 20px 32px;
 
         margin-inline: auto;
         width: min(90%, 70.5rem);
    
     }
-    @media (width >= $desktop) {
-  //   margin-top: 72px;
-
-   
-        background-color: paleturquoise;
-        padding-top: 60px;
+    @media ($desktop) {
+        padding-top: 74.5px;
     }
 }

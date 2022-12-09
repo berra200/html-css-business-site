@@ -8,26 +8,41 @@ body {
     flex-direction: column;
 
     min-height: 100%;
+
+    background-color: $backgroundClr;
+
 }
 
 
 .columns {
     margin: 0;
 }
-// .column {
-//     padding: 0;
-// }
+
+//TEXT STYLING
 
 h1 {
-    font-size: 1.8rem;
+
+    font-size: 1.5rem;
+    // Får utrymme av sin egen font-storlek
+    margin-bottom: 1em;
+    padding-left: 12px;
 }
 h2 {
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 1rem;
+    // font-weight: 500;
 }
 
-p {
-    font-size: 1rem;
+//!använder vi h3/h4:or
+h1,h2,h3,h4{
+    font-family: $family-primary;
+    color: $textClr;
+    font-weight: 700;
+}
+
+p, a {
+    font-size: 0.9rem;
+    font-family: $family-secondary;
+    color: $textClr;
 }
 
 .active {
@@ -45,12 +60,12 @@ a:hover {
 
 .btn-small {
     background-color: $buttonClr;
+    font-family: $family-primary;
+    color: $textClr;
     border-radius: 0;
     border: none;
     width: 179px;
     height: 40px;
-    
-    
     // &:hover {
         //todo: animation
     // };
@@ -59,9 +74,26 @@ a:hover {
 
 //! Används den?
 .btn-large {
+    background-color: $buttonClr;
+    font-family: $family-primary;
+    color: $textClr;
+    border-radius: 0;
+    border: none;
+    height: 40px;
     width: 295px;
-    @media (width >= $desktop) {
+    @media ($desktop) {
         width: 353px;
     }
 
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+
+    @media ($desktop) {
+        top: -90px;
+    }
 }

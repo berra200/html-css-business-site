@@ -9,7 +9,7 @@
     width: 100vw;
     position: fixed;
     top: 0;
-    @media (width >= 1024px) {
+    @media ($desktop) {
         // position: static;
         //! Hur fungera position för hela navigationen vid scroll
     }
@@ -25,18 +25,18 @@
         position: fixed; 
         top: 52px;       
         width: 100vw;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid $textClr;
         background-color: $headerClr;
-            .navbar-item {
-            border-top: 1px solid black;
+        .navbar-item {
+            border-top: 1px solid $textClr;
+            font-family: $headingFont;
             &:hover {
-                color: black;
                 background-color: $selected;
-                border-left: 1px solid black;
-                border-right: 1px solid black;
+                border-left: 1px solid $textClr;
+                border-right: 1px solid $textClr;
             }
-            };
-        @media (width >= 1024px) {
+        };
+        @media ($desktop) {
             @include flex (space-around, center); 
             .navbar-item {
                 border: none;

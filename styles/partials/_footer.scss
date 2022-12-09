@@ -6,22 +6,19 @@
     margin-top: auto;
     margin-bottom: 0;
 
-    .header--footer{
-        color: black;
+    .h3{
         font-weight: 700;
     }
-
-    a,
-    p {
-        // text-decoration: none;
-        color: black;
-        font-weight: 400;
-    }
+    
   
     //Ikoner
     .fa-brands, .fa-solid {
         color: $neutralClr;
         width: 1rem;
+    }
+
+    .footer-logo {
+        @include flex (center, center, column)
     }
 }
 
