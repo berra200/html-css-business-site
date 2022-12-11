@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // NAV: hittar akutell sida anv. befinner sig på och kastar på klassen "active" på a-taggen.
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
 let currentPage = location.href;
 let allNavLinks = document.querySelectorAll(".page");
 
@@ -33,30 +33,37 @@ let allNavLinks = document.querySelectorAll(".page");
   allNavLinks.forEach((link) => {
     if(link.href === currentPage) {
       link.className += " " + "active";
+      link.ariaCurrent = "page";
     }
   });
   
 });
 
+// Display av värdering-formulär
 
-function checkValuation() {
-  // let dropdown = document.querySelector("#subjectDropdown");
-  // console.log(dropdown.value)
+let dropdown = document.querySelector("#subjectDropdown");
 
-  if (document.querySelector("#subjectDropdown").value === "4") {
-    
-    console.log("true");
+dropdown.addEventListener("change", () => {
+  
+  let valuationForm = document.querySelector("#valuationForm");
+  let allInputFieldsValuation = document.querySelectorAll(".input-valuation");
+
+  if (dropdown.value === "4") {
+    valuationForm.style.display = "block";
+
+    allInputFieldsValuation.forEach((input) => {
+      input.required = true;
+
+    });
+
   } else {
-    console.log("false");
-  }
+    valuationForm.style.display = "none";
 
-}
+    allInputFieldsValuation.forEach((input) => {
+      input.required = false;
+    });
+
+  };
+});
 
 
-// let selectedOption = dropdown.value;
-// valuation.forEach((option) => {
-// if(option === "4")
-// });
-// if (valuation.value == selectcard) {
-//     alert("Please select a card type");
-// }
