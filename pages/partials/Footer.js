@@ -42,67 +42,65 @@ footer.innerHTML = `
         <!--HITTA OSS-->
         <div class="column is-4-tablet is-inline">
             <h3>HITTA OSS</h3>
-            <div class="columns is-mobile is-narrow">
-                <div class="column is-narrow">
-                    <a href="https://www.google.com/maps/place/Grev+Turegatan+6,+114+46+Stockholm/@59.3352003,18.066199,15z/data=!3m1!4b1!4m5!3m4!1s0x465f9d5b6fd25049:0x7c52e24738b70557!8m2!3d59.3352006!4d18.0749537" rel="external target="_blank">
-                        <i class="fa-solid fa-location-dot"></i>
-                    </a>
-                </div>
-                <div class="column is-narrow">
-                    <a href="https://www.google.com/maps/place/Grev+Turegatan+6,+114+46+Stockholm/@59.3352003,18.066199,15z/data=!3m1!4b1!4m5!3m4!1s0x465f9d5b6fd25049:0x7c52e24738b70557!8m2!3d59.3352006!4d18.0749537" rel="external target="_blank">
+
+            <!--PLATS-->
+            <a href="https://www.google.com/maps/place/Grev+Turegatan+6,+114+46+Stockholm/@59.3352003,18.066199,15z/data=!3m1!4b1!4m5!3m4!1s0x465f9d5b6fd25049:0x7c52e24738b70557!8m2!3d59.3352006!4d18.0749537" aria-label="Hitta till Anrika Fastigheter via Google Maps" rel="external" target="_blank">
+                <div class="columns is-mobile is-narrow">
+                    <div class="column is-narrow">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    </div>
+                    <div class="column is-narrow">
                         <address>
                             Grevturegatan 6
                             <br/>114 46 Stockholm
                         </address>
-                    </a>
+                    </div>
                 </div>
-            </div>
-            <div class="columns is-mobile">
-                <div class="column is-narrow">
-                    <a href="tel:+46707343434">
-                        <i class="fa-solid fa-phone"></i>
-                    </a>
-                </div>
-                <div class="column is-narrow">
-                    <a href="tel:+46707343434">
+            </a>
+            <!--TELEFON-->
+            <a href="tel:+46707343434" aria-label="Ring Anrika Fastigheter">
+                <div class="columns is-mobile">
+                    <div class="column is-narrow">
+                        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                    </div>
+                    <div class="column is-narrow">
                         <p>070 734 34 34</p>
-                    </a>
+                    </div>
                 </div>
-            </div>
-            <div class="columns is-mobile">
-                <div class="column is-narrow">
-                    <a href="mailto:info@anrikafastigheter.se">
-                        <i class="fa-solid fa-envelope"></i>
-                    </a>
+            </a>
+            <!--MEJL-->
+            <a href="mailto:info@anrika.se" aria-label="Mejla Anrika Fastigheter">
+                <div class="columns is-mobile">
+                    <div class="column is-narrow">
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                    </div>
+                    <div class="column is-narrow">
+                        <p>info@anrika.se</p>
+                    </div>
                 </div>
-                <div class="column is-narrow">
-                    <a href="mailto:info@anrikafastigheter.se">
-                        <p>info@anrikafastigheter.se</p>
-                    </a>
-                </div>
-            </div>
+            </a>
         </div class="column">
         <!--FÖLJ OSS-->
         <div class="column is-2-tablet">
             <h3>FÖLJ OSS</h3>
             <div class="columns is-mobile">
                 <div class="column is-narrow">
-                    <a href="https://www.facebook.com/" rel="external target="_blank">
-                        <i class="fa-brands fa-facebook"></i>
+                    <a href="https://www.facebook.com/" aria-label="Följ Anrika Fastigheter på Facebook" rel="external" target="_blank">
+                        <i class="fa-brands fa-facebook" aria-hidden="true"></i>
                     </a>
                 </div>
                 <div class="column is-narrow">
-                    <a href="https://www.instagram.com/" rel="external target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
+                    <a href="https://www.instagram.com/" aria-label="Följ Anrika Fastigheter på Instagram" rel="external" target="_blank">
+                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
         </div>
         <!--LOGGA-->
         <div class="column is-3-tablet footer-logo">
-                <a href="/index.html">
-                    <img src="/pictures/Logotype.png"
-                        alt="#"
+                <a href="/">
+                    <img src="/pictures/black-logo.png"
+                        alt="Anrika Fastigheters logga, länk till startsida"
                     />
                 </a>
         </div>

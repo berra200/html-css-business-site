@@ -1,30 +1,167 @@
 
-
 main {
     margin: 0 24px;
     background-color: $neutralClr;
     border-left: 1px solid black;
     border-right: 1px solid black;
     padding: 24px 12px;
-
-    h2 {
-        font-family: $family-primary
-    }
-
-
-    img {
-        // border-radius: 10px;
-    }
-
-    // background-color: aquamarine;
+    
     @media ($tablet) {
         padding: 20px 32px;
-
         margin-inline: auto;
         width: min(90%, 70.5rem);
-   
     }
     @media ($desktop) {
         padding-top: 74.5px;
     }
 }
+
+//STARTSIDA MAIN
+
+.startpage-grid {
+    h2 {
+        font-size: 1.5rem;
+        padding-left: 12px;
+        margin-bottom: 1em;
+    }
+}
+
+//ABOUT MAIN
+
+.about-page {
+    h2 {
+        font-size: 1.5rem;
+        padding-left: 12px;
+        margin-bottom: 1em;
+    };
+};
+
+
+
+//KONTAKT MAIN
+
+.office {
+    img {
+        width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        vertical-align: middle;
+        @media ($tablet) {
+            max-height: 350px;
+        };
+    };
+    h1 {
+        padding-left: 0;
+    };
+    .contact-details{
+        div {
+            padding: 8px 8px;
+            p span { 
+                font-family: $family-primary;
+                font-weight: 700;
+            };
+            address {
+                color: $textClr;
+
+            };
+        };
+    };
+};
+
+.contact-form {
+    padding: 12px 0;
+    .form-header, .valuation-header {
+        text-align: center;
+        padding: 12px 12px;
+        background-color: pink;
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1em;
+            text-align: center;
+            background-color: blu
+        };
+    }
+    form {
+        .field {
+            padding: 0.75rem;
+            .select, select {
+                width: 100%;
+            };
+            input, select, option, textarea {
+                border-radius: 0;
+                &:focus {
+                    border-color: darken($accentClr, 30%);
+                    background-color: $accentClr;
+                }
+            }
+            input[type="checkbox"] {
+                accent-color: $accentClr;
+            };
+            label {
+                font-family: $family-primary;
+                color: $textClr;
+
+            };
+          
+        };
+       #valuationForm {
+            display: none;
+       }
+    };
+};
+
+ //TILL SALU MAIN
+
+
+   
+ .object-grid {
+    @include flex ($direction: column);
+    gap: 24px;
+    .object-row {
+        border-top: 1px solid $textClr;
+        &:hover {
+            cursor: pointer;
+            .object-img {
+                opacity: 0.7;
+            };
+        };
+        .holder {
+                margin-top: 12px;
+        };
+        .object-img {
+            //! Funkar ej
+            // @include imgAdjuster();
+            width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+            vertical-align: middle;
+            @media ($tablet) {
+                max-height: 250px;
+            };
+        };  
+        .property-description {
+            text-align: center;
+            .city {
+                @include flex (center, center, default);
+                gap: 1.25rem;
+                .logo-mini {
+                    height: 20px;
+                };
+                @media ($tablet) {
+                    @include flex (flex-start);
+                };
+            };
+            .spec {
+                @include flex (space-between, center);
+            };
+            @media ($tablet) {
+                @include flex (space-between, default , column);
+                text-align: start;
+                .holder {
+                    margin-top: 0px;
+                };
+            };
+        };
+    };
+};
+

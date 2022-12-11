@@ -21,9 +21,7 @@
 
 </head>
 <body>
-    <header id="header">
-
-    </header> 
+    <header id="header"></header> 
     
     <main>
         <div class="office columns">
@@ -35,39 +33,46 @@
                 <div class="contact-details">
                     <div class="phone">
                         <p><span>TELEFON</span></p>
-                        <p>070-734 34 34</p>
+                        <a href="tel:+46707343434" aria-label="Ring Anrika Fastigheter">
+                            <p>070-734 34 34</p>
+                        </a>
                     </div>
                     <div class="email">
                         <p><span>E-POST</span> </p>
-                        <p>info@anrikafastighter.se</p>
+                        <a href="mailto:info@anrika.se" aria-label="Mejla Anrika Fastigheter">
+                            <p>info@anrika.se</p>
+                        </a>
                     </div>
                     <div class="fax">
                         <p><span>FAX</span></p>
                         <p>08-343 93 83</p>
                     </div>
-                    <div class="adress">
+                    <div class="address">
                         <p><span>ADRESS</span></p>
-                        <address>
-                            Grevturegatan 6
-                            <br/>114 46 Stockholm
-                        </address>
+                        <a href="https://www.google.com/maps/place/Grev+Turegatan+6,+114+46+Stockholm/@59.3352003,18.066199,15z/data=!3m1!4b1!4m5!3m4!1s0x465f9d5b6fd25049:0x7c52e24738b70557!8m2!3d59.3352006!4d18.0749537" aria-label="Hitta till Anrika Fastigheter via Google Maps" rel="external" target="_blank" >
+                            <address>
+                                Grevturegatan 6
+                                <br/>114 46 Stockholm
+                            </address>
+                        </a>
                     </div>
                 </div>
             </div>
 
         </div>
+
+
+       
+
+
 <!-- FORM -->
         <a class="anchor" id="contact-anchor"></a>
         <div class="contact-form" >
-            <!--todo: när man skickar form få meddelande -->
-            <!--todo: aria labels -->
-
-            <!--todo: om man väljer värdering -> så kommer fler alternativ upp: adress, kvm, ROK osv-->
-
-            <h2>MEDDELA OSS DIREKT</h2>
-
-            <!-- BESKRIVNING?-->
-            <form action="#">
+            <div class="form-header">
+                <h2>VI HJÄLPER DIG</h2>
+                <p>Behöver du en kostnadsfri värdering, har du frågor kring vår verksamhet eller har du synpunkter på vår webbplats? <br/>Fyll i formuläret nedan så hör vi av oss.</p>
+            </div>
+            <form>
                 <div class="columns">
                     <div class="field column">
                         <label class="label" for="fName">Förnamn<sup>*</sup></label>
@@ -90,10 +95,10 @@
                         </div>
                     </div>
                     <div class="field column is-5">
-                        <label class="label" for="subjectDropdown">Ärende</label>
+                        <label class="label" for="subjectDropdown">Välj ärende</label>
                         <div class="control">
                             <div class="select">
-                                <select name="subjectDropdown" id="subjectDropdown" onchange="checkValuation()">
+                                <select name="subjectDropdown" id="subjectDropdown">
                                     <option value="1" disabled selected hidden>Välj ärende</option>
                                     <option value="2">Frågor om företaget</option>
                                     <option value="3">Synpunkter på hemsidan</option>
@@ -104,28 +109,75 @@
                     </div>
                 </div>
 
+    <!-- VÄRDERING FORMULÄR-->
+            <div id="valuationForm">
+                <div class="valuation-header">
+                    <p>Funderar du på att sälja? Vi hjälper dig. <br/>Fyll i dina bostadsuppgifter för en kostandsfri värdering. <br/>Vi kontaktar dig efter genomförd förfrågan.</p>
+                </div>
+                <div class="columns">
+                    <!-- TEL -->
+                    <div class="field column">
+                        <label class="label" for="phoneNum">Telefonnummer</label>
+                        <div class="control">
+                            <input class="input input-valuation" id="phoneNum" name="phoneNum" type="tel" pattern="\d*" placeholder="0707343434"/>
+                        </div>
+                    </div>
+                    <div class="field column">
+                        <label class="label" for="squareMeter">Kvadratmeter</label>
+                        <div class="control">
+                            <input class="input input-valuation" id="squareMeter" name="squareMeter" type="number" placeholder="Antal kvadratmeter" />
+                        </div>
+                    </div>
+                </div>
+                <!-- ADRESS -->
                 <div class="field">
-                    <label class="label" for="message">Meddelande:</label>
+                    <label class="label" for="adressInput">Gatuadress</label>
                     <div class="control">
-                        <textarea class="textarea" id="message" placeholder="Berätta hur vi kan hjälpa dig"></textarea>
+                        <input class="input input-valuation" id="adressInput" name="adressInput" type="text" placeholder="Grevturegatan 6" autocomplete="street-address" />
                     </div>
                 </div>
-                <div class="field">
-                    <div class="control">
-                        <input type="checkbox" name="terms" id="terms" required/>
-                        <label for="terms">Jag godkänner Anrika Fastigheters användarvillkor och personuppgiftspolicy<sup>*</sup></label>
+                <div class="columns">
+                    <!-- POSTNMR -->
+                    <div class="field column">
+                        <label class="label" for="zipCode">Postnummer</label>
+                        <div class="control">
+                            <input class="input input-valuation" id="zipCode" name="zipCode" type="number"  placeholder="11446" autocomplete="postal-code" />
+                        </div>
+                    </div>
+                    <!-- STAD -->
+                    <div class="field column">
+                        <label class="label" for="cityInput">Stad</label>
+                        <div class="control">
+                            <input class="input input-valuation" id="cityInput" name="cityInput" type="text" placeholder="Stad" autocomplete="address-level2" />
+                        </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="field">
-                    <div class="control has-text-centered">
-                        <button class="button btn-small" type="submit">SKICKA</button>
-                    </div>
+
+            <!-- FRITEXT -->
+            <div class="field">
+                <label class="label" for="message">Meddelande</label>
+                <div class="control">
+                    <textarea class="textarea" id="message" placeholder="Skriv ditt meddelande"></textarea>
                 </div>
+            </div>
+    
+            <!-- CHECKBOX -->
+            <div class="field">
+                <div class="control">
+                    <input type="checkbox" name="terms" id="terms" required/>
+                    <label for="terms">Jag godkänner Anrika Fastigheters användarvillkor och personuppgiftspolicy<sup>*</sup></label>
+                </div>
+            </div>
 
+        <!-- KNAPP -->
+            <div class="field">
+                <div class="control has-text-centered">
+                    <button class="button btn-small" type="submit">SKICKA</button>
+                </div>
+            </div>
 
-
-                <!-- Forms legend -->
             </form>
 
         </div>

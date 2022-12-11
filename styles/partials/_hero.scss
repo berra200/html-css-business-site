@@ -3,7 +3,7 @@
         background-image: url('/pictures/P1.jpeg');
         background-position: center center;
         background-size: cover;
-    }
+    };
 
     .hero-body {
         .hero-item-wrapper {
@@ -14,14 +14,15 @@
             h1,
             p {
                 color: white;
-            }
-        }
-    }
+                margin-bottom: 1em;
+            };
+        };
+    };
 
     
     .slogan {
-        font-family: $headingFont;
+        font-family: $family-primary;
         font-weight: 600;
         font-size: small;
-    }
-}
+    };
+};

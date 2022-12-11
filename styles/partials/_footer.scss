@@ -2,23 +2,24 @@
     border-top: 1px solid black;
     background-color: $selected;
     padding: 30px;
-    
     margin-top: auto;
     margin-bottom: 0;
 
     .h3{
         font-weight: 700;
-    }
+    };
     
-  
-    //Ikoner
+    // Ikoner
     .fa-brands, .fa-solid {
-        color: $neutralClr;
+        color: $textClr;
         width: 1rem;
-    }
+    };
 
     .footer-logo {
-        @include flex (center, center, column)
-    }
-}
+        @include flex (center, center, column);
+        img {
+            max-height: 150px;
+        };
+    };
+};
 

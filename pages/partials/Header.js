@@ -4,8 +4,8 @@ header.innerHTML = `
 <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
         <!--Logga-->  
-        <a class="navbar-item nav-logo" href="/index.html">
-            <img src="/pictures/Logotype.png" width="112" height="28"/>
+        <a class="navbar-item nav-logo" href="/">
+            <img src="/pictures/Logotype.png" width="112" height="28" alt="Anrika Fastigheters logga, länk till startsida"/>
         </a>   
         <!--Hamburgaremeny-->  
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
