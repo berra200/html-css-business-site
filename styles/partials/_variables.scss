@@ -1,32 +1,17 @@
 
 //Färger:
 //! Defaultvärden?
-
 $headerClr: #D9D9D9;
 $backgroundClr: #EAE7DC;
-$selected: #D8C3A5;
+$selected: #d6c2b1;
 $textClr: #000000;
-$logoClr: #8E8D8A;
-// $buttonClr: #E5E5E5;
-$buttonClr: #d6c2b1;
 $neutralClr: #FFFFFF;
-$accentClr: darken(#d2f9f9, 40%); 
-$focusClr: #dbfafa;
-// background-color: #d2f9f9;
-        // background-color: #A5F2F3;
-
+$accentClr: #dff2f7; 
 
 //Fonter:
 //! Fler deafaultvärden?
 $family-primary: "Libre Baskerville", sans-serif;
 $family-secondary: "Libre Franklin", sans-serif;
-$headingFont: "Libre Baskerville",  ;
-$bodyTextFont: "Libre Franklin", ;
-
-//padding
-
-// $outerLayer: 12px;
-// $innerLayer: 8px;
 
 //Breakpoints
 $tablet: "width >= 769px";

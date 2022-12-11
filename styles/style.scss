@@ -12,11 +12,9 @@
 @layer special-styles {
     @import "./partials/variables";
     @import "./partials/mixins";
-    @import "./partials/footer";
     @import "./partials/global";
+    @import "./partials/footer";
     @import "./partials/main";
     @import "./partials/header";
-    @import "./partials/property";
-    @import "./partials/contact";
     @import "./partials/hero";
 }

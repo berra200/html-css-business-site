@@ -1,18 +1,12 @@
 
-
-/*Header*/
-//Logan div
+// Logga div
 .navbar-brand {
     background-color: $headerClr;
     border-bottom: 1px solid black;
-    justify-content: center; 
+    @include flex($justify: center);
     width: 100vw;
     position: fixed;
     top: 0;
-    @media ($desktop) {
-        // position: static;
-        //! Hur fungera position för hela navigationen vid scroll
-    }
     .navbar-burger {
         position: absolute;
         right: 0;
@@ -29,7 +23,7 @@
         background-color: $headerClr;
         .navbar-item {
             border-top: 1px solid $textClr;
-            font-family: $headingFont;
+            font-family: $family-primary;
             &:hover {
                 background-color: $selected;
                 border-left: 1px solid $textClr;

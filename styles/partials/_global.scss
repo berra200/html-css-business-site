@@ -1,99 +1,111 @@
 
-// Layout för footer att funka
+// Grund för footer
 html {
     height: 100%;
-}
+};
+
 body {
-    display: flex;
-    flex-direction: column;
-
     min-height: 100%;
-
     background-color: $backgroundClr;
 
-}
+    //! ytterligare mixin som ej funkar >:-(
+    // @include flex($direction: column);
+    display: flex;
+    flex-direction: column; 
+};
 
 
 .columns {
     margin: 0;
-}
+};
 
 //TEXT STYLING
 
-h1 {
-
-    font-size: 1.5rem;
-    // Får utrymme av sin egen font-storlek
-    margin-bottom: 1em;
-    padding-left: 12px;
-}
-h2 {
-    font-size: 1rem;
-    // font-weight: 500;
-}
-
 //!använder vi h3/h4:or
-h1,h2,h3,h4{
+h1, h2, h3 {
     font-family: $family-primary;
     color: $textClr;
-    font-weight: 700;
-}
+    font-weight: 800;
+};
 
-p, a {
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+    padding-left: 12px;
+};
+
+h2 {
+    font-size: 1rem;
+};
+
+
+p, a, address {
     font-size: 0.9rem;
     font-family: $family-secondary;
     color: $textClr;
-}
+    font-style: normal;
+};
 
 .active {
     text-decoration: underline;
-}
-
-a:hover {
-    background-color: none;
-    text-decoration: underline;
-}
-
-// .property-img:hover {
-//     transition: transform .5s ease, .5s ease, .5s ease;
-// }
-
-.btn-small {
-    background-color: $buttonClr;
-    font-family: $family-primary;
-    color: $textClr;
-    border-radius: 0;
-    border: none;
-    width: 179px;
-    height: 40px;
-    // &:hover {
-        //todo: animation
-    // };
-    
 };
 
-//! Används den?
-.btn-large {
-    background-color: $buttonClr;
+a:hover:not(.btn-large) {
+    background-color: none;
+    text-decoration: underline;
+};
+
+.btn-small {
+    background-color: $selected;
     font-family: $family-primary;
     color: $textClr;
+    font-size: 0.75rem;
+    font-weight: 800;
     border-radius: 0;
     border: none;
-    height: 40px;
-    width: 295px;
+    width: 150px;
+    height: 35px;
+    &:hover, &:focus {
+        @include changeClr();		
+    };
+};
+
+.btn-large {
+    background-color: $selected;
+    font-family: $family-primary;
+    color: $textClr;
+    font-size: 0.75rem;
+    font-weight: 800;
+    border-radius: 0;
+    border: none;
+    height: 35px;
+    width: 270px;
+    &:hover, &:focus {
+        @include changeClr();		
+    };
+    
     @media ($desktop) {
         width: 353px;
-    }
-
-}
+    };
+};
 
 a.anchor {
     display: block;
     position: relative;
     top: -50px;
     visibility: hidden;
-
     @media ($desktop) {
         top: -90px;
-    }
-}
+    };
+};
+
+
+
+//ANIMATION
+
+@keyframes switchClr {
+    100% {
+        background-color: $accentClr;
+    };
+};
+  
