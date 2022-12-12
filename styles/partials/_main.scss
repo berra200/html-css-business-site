@@ -18,11 +18,30 @@ main {
 
 //STARTSIDA MAIN
 
-.startpage-grid {
+.homepage-grid {
     h2 {
         font-size: 1.5rem;
         padding-left: 12px;
         margin-bottom: 1em;
+    }
+
+    .image-container {
+        position: relative;
+        text-align: center;
+    }
+
+    .image-text-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: hsla(304, 100%, 0%, 0.6);
+        padding: 1rem;
+        border-radius: 0.5rem;
+        p {
+            color: white;
+            margin-bottom: 1em;
+        };
     }
 }
 
