@@ -54,7 +54,7 @@ GEMENSAMT:
 
 <!-- * Logga footer utan text kankse... -->
 
-* HEADER: ej fixed för desktop?
+* HEADER: Behöver kanske vara större för att förtydliga vilket företag vi är?
 
 <!-- * Gå igenom vilka variabler som ej används -->
     <!-- * ex färger -->
@@ -72,7 +72,7 @@ GEMENSAMT:
 
 
 NICE_TO_HAVES:
-* Knapp: färg-animation
+<!-- * Knapp: färg-animation -->
 
 * Logga högst upp i webbläsarefönstret
     *     <link rel="shortcut icon" href="/pictures/mini-logo.png" />
@@ -87,6 +87,13 @@ NICE_TO_HAVES:
 
 * Styla om man ej fyller i allt man ska
     * aria-invalid="true" 
+
+
+
+
+
+
+
 
 STINA:
 
