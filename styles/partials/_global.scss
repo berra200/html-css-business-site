@@ -22,7 +22,7 @@ body {
 //TEXT STYLING
 
 //!använder vi h3/h4:or
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: $family-primary;
     color: $textClr;
     font-weight: 800;
@@ -39,7 +39,7 @@ h2 {
 };
 
 
-p, a, address {
+p, a, address, li {
     font-size: 0.9rem;
     font-family: $family-secondary;
     color: $textClr;

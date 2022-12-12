@@ -27,9 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
 let currentPage = location.href;
 let allNavLinks = document.querySelectorAll(".page");
 
-  // console.log(currentPage);
-  // console.log(allNavLinks);
-
   allNavLinks.forEach((link) => {
     if(link.href === currentPage) {
       link.className += " " + "active";
@@ -62,7 +59,6 @@ dropdown.addEventListener("change", () => {
     allInputFieldsValuation.forEach((input) => {
       input.required = false;
     });
-
   };
 });
 

@@ -13,36 +13,42 @@ GEMENSAMT:
         * rad 106
 
 * Gå igenom och checka av uppgift:
-    * OM OSS --> SLOGAN!!!!
+    <!-- * OM OSS --> SLOGAN!!!! -->
+    * OM OSS kort beskrivning av varje medarbetare
+    * om oss bild förhållade till text, lite responsivitet problem
+
 
 * Gör tillgänglighetstest
+
+* main 
 
 <!-- * Centrera Logga + copyright i footer -->
 
 <!-- * Uppdatera alla media Q:s till breakpoint variabler -->
 
 * Fonter
-    * deafult fotner
+    <!-- * deafult fotner -->
     * bestäm vår slutgiltiga font
 
 * Font-storlekar
 
-* om oss bild förhållade till text
 
 * Färger
     * default färger?
     * kontraster
+        <!-- * header logga ej ok grått på grått -->
 
 
 * Stäng alla stjälvstängande taggar
-    * ex img
-    * input
+    <!-- * ex img -->
+    <!-- * input -->
 
 * Tillgänglighet: 
     * Aria labels
         * aria-labelledby - interna länkar
-        * Role attribut på logga som fungerar som länk?
     * ALT-texter, vissahar plceholders (#)
+        * om oss
+        * testemonials
 
 * ta bort alla dumma kommentarer
 
@@ -57,6 +63,10 @@ GEMENSAMT:
 
 
 <!-- * Gå igenom alla flex box --> ändra till mixinen -->
+
+* OM OSS ta bort tidslinje?
+
+* Rensa bilder som ej används
 
 * Individuell rapport!
 
@@ -90,9 +100,11 @@ STINA:
 
 <!-- * Göra om property sida till ul!!! -->
 
-* Gör aklickbara lönkar kontaktsida som i footer
+<!-- * Gör aklickbara lönkar kontaktsida som i footer -->
 
 * My kontorsbild
+
+* rensa JS från halvfärdigt projekt
 
 * Ändra alla bilder + texter kcontact + property
 
@@ -103,6 +115,14 @@ STINA:
     * border
     * curser pointer på hela -->
 
+* Gör text produkt sida med länk till kontakt för värdering
+
 * göra välja ärende till required
 
 * styla required när ej ifyllt
+
+* lägg till sup
+    -ä rensa js om ej funkar
+    - även rensa formuläret default från asterixer * då
+
+* rensa required på / lägga till reuired form sälj med oss

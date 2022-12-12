@@ -7,7 +7,7 @@
 @layer bulma {
     @charset "utf-8";
     @import "../node_modules/bulma/bulma.sass";
-}
+};
 
 @layer special-styles {
     @import "./partials/variables";
@@ -17,4 +17,5 @@
     @import "./partials/main";
     @import "./partials/header";
     @import "./partials/hero";
-}
+    @import "./partials/form";
+};

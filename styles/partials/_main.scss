@@ -28,19 +28,36 @@ main {
 
 //ABOUT MAIN
 
+//!NYTT
+.about-page-hero {
+    .hero {
+        &.has-background {
+            background-image: url('/pictures/slider2.jpeg');
+        };
+        .hero-body {
+            @include flex ($justify: center);
+        };
+    };
+
+}
+
 .about-page {
     h2 {
         font-size: 1.5rem;
-        padding-left: 12px;
         margin-bottom: 1em;
     };
+    h2:nth-child(2) {
+        padding-left: 12px;
+    }
 };
+//!NYTT slut
 
 
 
 //KONTAKT MAIN
 
 .office {
+    padding-bottom: 12px;
     img {
         width: 100%;
         min-height: 100%;
@@ -55,64 +72,23 @@ main {
     };
     .contact-details{
         div {
-            padding: 8px 8px;
+            padding: 8px 8px 0;
             p span { 
                 font-family: $family-primary;
                 font-weight: 700;
             };
-            address {
-                color: $textClr;
-
-            };
+            
         };
     };
 };
 
-.contact-form {
-    padding: 12px 0;
-    .form-header, .valuation-header {
-        text-align: center;
-        padding: 12px 12px;
-        background-color: pink;
-        h2 {
-            font-size: 1.5rem;
-            margin-bottom: 1em;
-            text-align: center;
-            background-color: blu
-        };
-    }
-    form {
-        .field {
-            padding: 0.75rem;
-            .select, select {
-                width: 100%;
-            };
-            input, select, option, textarea {
-                border-radius: 0;
-                &:focus {
-                    border-color: darken($accentClr, 30%);
-                    background-color: $accentClr;
-                }
-            }
-            input[type="checkbox"] {
-                accent-color: $accentClr;
-            };
-            label {
-                font-family: $family-primary;
-                color: $textClr;
-
-            };
-          
-        };
-       #valuationForm {
-            display: none;
-       }
-    };
+#valuationForm {
+    display: none;
 };
+
+
 
  //TILL SALU MAIN
-
-
    
  .object-grid {
     @include flex ($direction: column);
@@ -143,12 +119,12 @@ main {
             text-align: center;
             .city {
                 @include flex (center, center, default);
-                gap: 1.25rem;
+                gap: 1rem;
                 .logo-mini {
-                    height: 20px;
+                    width: 30px;
                 };
                 @media ($tablet) {
-                    @include flex (flex-start);
+                    @include flex (flex-start, center);
                 };
             };
             .spec {
@@ -163,5 +139,48 @@ main {
             };
         };
     };
+};
+
+
+// SÄLJ MED OSS
+
+.sell-page {
+
+    .sell-page-hero {
+        .hero {
+            &.has-background {
+                background-image: url('/pictures/slider1.jpeg');       
+            };
+            .hero-body {
+                @include flex ($justify: center);
+                .hero-item-wrapper {
+                    width: 300px;
+                };
+            };
+        };
+    };
+    .services {
+        padding: 24px 12px 12px;
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1em;
+            @media ($tablet) {
+                text-align: center;
+            };
+        };
+        .column {
+            @media ($tablet) {
+                @include flex(default, center, column);
+                &:nth-child(2) {
+                    margin-top: 125px;
+                };
+            };
+        };
+    };
+    .form-header p:first-child {
+        font-family: $family-primary;
+        font-weight: 800;
+        margin-bottom: 1em;
+    }
 };
 
