@@ -10167,6 +10167,23 @@ label.panel-block:hover {
     padding-left: 12px;
     margin-bottom: 1em;
   }
+  .startpage-grid .image-container {
+    position: relative;
+    text-align: center;
+  }
+  .startpage-grid .image-text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsla(304deg, 100%, 0%, 0.6);
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  .startpage-grid .image-text-container p {
+    color: white;
+    margin-bottom: 1em;
+  }
   .about-page-hero .hero.has-background {
     background-image: url("/pictures/slider2.jpeg");
   }
