@@ -5,7 +5,7 @@ header.innerHTML = `
     <div class="navbar-brand">
         <!--Logga-->  
         <a class="navbar-item nav-logo" href="/">
-            <img src="/pictures/black-logo-text.png" alt="Anrika Fastigheters logga, länk till startsida"/>
+            <img src="/pictures/logo-text.png" alt="Anrika Fastigheters logga, länk till startsida"/>
         </a>   
         <!--Hamburgaremeny-->  
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">

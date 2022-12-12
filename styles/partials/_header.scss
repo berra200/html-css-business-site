@@ -10,13 +10,13 @@
     .navbar-burger {
         position: absolute;
         right: 0;
-    }
-}
+    };
+};
 
 //Navigationslänkarna div
 .navbar-menu {
     .navbar-start{
-        position: fixed; 
+        position: fixed;
         top: 52px;       
         width: 100vw;
         border-bottom: 1px solid $textClr;

@@ -5,8 +5,9 @@
     margin-top: auto;
     margin-bottom: 0;
 
-    .h3{
-        font-weight: 700;
+    .footer-container > p:first-of-type {
+        font-family: $family-primary;
+        font-weight: 800;
     };
     
     // Ikoner
@@ -14,7 +15,6 @@
         color: $textClr;
         width: 1rem;
     };
-
     .footer-logo {
         @include flex (center, center, column);
         img {
