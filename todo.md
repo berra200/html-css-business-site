@@ -1,6 +1,8 @@
 GEMENSAMT:
 * Gå igenom heading struktur
-    * Footer h3:or?
+    <!-- * Footer h3:or? -->
+
+* citat sålda objekt
 
 * Semantisk HTML
     * Article
@@ -41,6 +43,7 @@ GEMENSAMT:
 * Stäng alla stjälvstängande taggar
     <!-- * ex img -->
     <!-- * input -->
+    * link
 
 * Tillgänglighet: 
     * Aria labels
