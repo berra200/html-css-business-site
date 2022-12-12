@@ -10,8 +10,8 @@ $accentClr: #dff2f7;
 
 //Fonter:
 //! Fler deafaultvärden?
-$family-primary: "Libre Baskerville", sans-serif;
-$family-secondary: "Libre Franklin", sans-serif;
+$family-primary: "Libre Baskerville", "Cormorant Garamond", Times, serif;
+$family-secondary: "Libre Franklin", sans-serif, "Gill Sans" ,"Trebuchet MS";
 
 //Breakpoints
 $tablet: "width >= 769px";

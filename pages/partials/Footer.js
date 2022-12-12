@@ -21,6 +21,11 @@ footer.innerHTML = `
                             </a>
                         </li>
                         <li>
+                            <a class="page" href="/pages/sell.html">
+                                SÄLJ MED OSS
+                            </a>
+                        </li>
+                        <li>
                             <a class="page" href="/pages/testimonials.html">
                                 SÅLDA OBJEKT
                             </a>

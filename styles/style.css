@@ -10030,8 +10030,8 @@ label.panel-block:hover {
   .columns {
     margin: 0;
   }
-  h1, h2, h3 {
-    font-family: "Libre Baskerville", sans-serif;
+  h1, h2, h3, h4 {
+    font-family: "Libre Baskerville", "Cormorant Garamond", Times, serif;
     color: #000000;
     font-weight: 800;
   }
@@ -10043,9 +10043,9 @@ label.panel-block:hover {
   h2 {
     font-size: 1rem;
   }
-  p, a, address {
+  p, a, address, li {
     font-size: 0.9rem;
-    font-family: "Libre Franklin", sans-serif;
+    font-family: "Libre Franklin", sans-serif, "Gill Sans", "Trebuchet MS";
     color: #000000;
     font-style: normal;
   }
@@ -10058,7 +10058,7 @@ label.panel-block:hover {
   }
   .btn-small {
     background-color: #d6c2b1;
-    font-family: "Libre Baskerville", sans-serif;
+    font-family: "Libre Baskerville", "Cormorant Garamond", Times, serif;
     color: #000000;
     font-size: 0.75rem;
     font-weight: 800;
@@ -10077,7 +10077,7 @@ label.panel-block:hover {
   }
   .btn-large {
     background-color: #d6c2b1;
-    font-family: "Libre Baskerville", sans-serif;
+    font-family: "Libre Baskerville", "Cormorant Garamond", Times, serif;
     color: #000000;
     font-size: 0.75rem;
     font-weight: 800;
@@ -10167,10 +10167,24 @@ label.panel-block:hover {
     padding-left: 12px;
     margin-bottom: 1em;
   }
+  .about-page-hero .hero.has-background {
+    background-image: url("/pictures/slider2.jpeg");
+  }
+  .about-page-hero .hero .hero-body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+  }
   .about-page h2 {
     font-size: 1.5rem;
-    padding-left: 12px;
     margin-bottom: 1em;
+  }
+  .about-page h2:nth-child(2) {
+    padding-left: 12px;
+  }
+  .office {
+    padding-bottom: 12px;
   }
   .office img {
     width: 100%;
@@ -10188,50 +10202,13 @@ label.panel-block:hover {
     padding-left: 0;
   }
   .office .contact-details div {
-    padding: 8px 8px;
+    padding: 8px 8px 0;
   }
   .office .contact-details div p span {
-    font-family: "Libre Baskerville", sans-serif;
+    font-family: "Libre Baskerville", "Cormorant Garamond", Times, serif;
     font-weight: 700;
   }
-  .office .contact-details div address {
-    color: #000000;
-  }
-  .contact-form {
-    padding: 12px 0;
-  }
-  .contact-form .form-header, .contact-form .valuation-header {
-    text-align: center;
-    padding: 12px 12px;
-    background-color: pink;
-  }
-  .contact-form .form-header h2, .contact-form .valuation-header h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1em;
-    text-align: center;
-    background-color: blu;
-  }
-  .contact-form form .field {
-    padding: 0.75rem;
-  }
-  .contact-form form .field .select, .contact-form form .field select {
-    width: 100%;
-  }
-  .contact-form form .field input, .contact-form form .field select, .contact-form form .field option, .contact-form form .field textarea {
-    border-radius: 0;
-  }
-  .contact-form form .field input:focus, .contact-form form .field select:focus, .contact-form form .field option:focus, .contact-form form .field textarea:focus {
-    border-color: #65c0d8;
-    background-color: #dff2f7;
-  }
-  .contact-form form .field input[type=checkbox] {
-    accent-color: #dff2f7;
-  }
-  .contact-form form .field label {
-    font-family: "Libre Baskerville", sans-serif;
-    color: #000000;
-  }
-  .contact-form form #valuationForm {
+  #valuationForm {
     display: none;
   }
   .object-grid {
@@ -10273,16 +10250,16 @@ label.panel-block:hover {
     justify-content: center;
     align-items: center;
     flex-direction: default;
-    gap: 1.25rem;
+    gap: 1rem;
   }
   .object-grid .object-row .property-description .city .logo-mini {
-    height: 20px;
+    width: 30px;
   }
   @media (width >= 769px) {
     .object-grid .object-row .property-description .city {
       display: flex;
       justify-content: flex-start;
-      align-items: flex-start;
+      align-items: center;
       flex-direction: row;
     }
   }
@@ -10303,6 +10280,46 @@ label.panel-block:hover {
     .object-grid .object-row .property-description .holder {
       margin-top: 0px;
     }
+  }
+  .sell-page .sell-page-hero .hero.has-background {
+    background-image: url("/pictures/slider1.jpeg");
+  }
+  .sell-page .sell-page-hero .hero .hero-body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  .sell-page .sell-page-hero .hero .hero-body .hero-item-wrapper {
+    width: 300px;
+  }
+  .sell-page .services {
+    padding: 24px 12px 12px;
+  }
+  .sell-page .services h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+  }
+  @media (width >= 769px) {
+    .sell-page .services h2 {
+      text-align: center;
+    }
+  }
+  @media (width >= 769px) {
+    .sell-page .services .column {
+      display: flex;
+      justify-content: default;
+      align-items: center;
+      flex-direction: column;
+    }
+    .sell-page .services .column:nth-child(2) {
+      margin-top: 125px;
+    }
+  }
+  .sell-page .form-header p:first-child {
+    font-family: "Libre Baskerville", "Cormorant Garamond", Times, serif;
+    font-weight: 800;
+    margin-bottom: 1em;
   }
   .navbar-brand {
     background-color: #D9D9D9;
@@ -10328,7 +10345,7 @@ label.panel-block:hover {
   }
   .navbar-menu .navbar-start .navbar-item {
     border-top: 1px solid #000000;
-    font-family: "Libre Baskerville", sans-serif;
+    font-family: "Libre Baskerville", "Cormorant Garamond", Times, serif;
   }
   .navbar-menu .navbar-start .navbar-item:hover {
     background-color: #d6c2b1;
@@ -10363,8 +10380,40 @@ label.panel-block:hover {
     margin-bottom: 1em;
   }
   .hero .slogan {
-    font-family: "Libre Baskerville", sans-serif;
+    font-family: "Libre Baskerville", "Cormorant Garamond", Times, serif;
     font-weight: 600;
     font-size: small;
+  }
+  .contact-form {
+    background-color: #dff2f7;
+    padding: 12px;
+  }
+  .contact-form .form-header {
+    text-align: center;
+    padding: 12px 12px;
+  }
+  .contact-form .form-header h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+  .contact-form form .field {
+    padding: 12px;
+  }
+  .contact-form form .field .select, .contact-form form .field select {
+    width: 100%;
+  }
+  .contact-form form .field input, .contact-form form .field select, .contact-form form .field option, .contact-form form .field textarea {
+    border-radius: 0;
+  }
+  .contact-form form .field input:focus, .contact-form form .field select:focus, .contact-form form .field option:focus, .contact-form form .field textarea:focus {
+    border-color: #3cb0ce;
+  }
+  .contact-form form .field input[type=checkbox] {
+    accent-color: #3cb0ce;
+  }
+  .contact-form form .field label {
+    font-family: "Libre Baskerville", "Cormorant Garamond", Times, serif;
+    color: #000000;
   }
 }/*# sourceMappingURL=style.css.map */
