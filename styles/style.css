@@ -10162,16 +10162,16 @@ label.panel-block:hover {
       padding-top: 74.5px;
     }
   }
-  .startpage-grid h2 {
+  .homepage-grid h2 {
     font-size: 1.5rem;
     padding-left: 12px;
     margin-bottom: 1em;
   }
-  .startpage-grid .image-container {
+  .homepage-grid .image-container {
     position: relative;
     text-align: center;
   }
-  .startpage-grid .image-text-container {
+  .homepage-grid .image-text-container {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -10180,7 +10180,7 @@ label.panel-block:hover {
     padding: 1rem;
     border-radius: 0.5rem;
   }
-  .startpage-grid .image-text-container p {
+  .homepage-grid .image-text-container p {
     color: white;
     margin-bottom: 1em;
   }
