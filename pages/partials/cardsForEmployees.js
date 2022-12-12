@@ -46,7 +46,6 @@ let employees = [
 let grid = document.querySelector("#employees")
 
 for (let i = 0; i < employees.length; i++) {
-    // grid.append(card)
     grid.innerHTML += `
     <article class="column is-4 has-text-centered">
         <figure class="image">
