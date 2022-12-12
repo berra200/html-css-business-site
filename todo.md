@@ -14,7 +14,7 @@ GEMENSAMT:
 
 * Gå igenom och checka av uppgift:
     <!-- * OM OSS --> SLOGAN!!!! -->
-    * OM OSS kort beskrivning av varje medarbetare
+    <!-- * OM OSS kort beskrivning av varje medarbetare -->
     * om oss bild förhållade till text, lite responsivitet problem
 
 
@@ -34,8 +34,7 @@ GEMENSAMT:
 
 
 * Färger
-    * default färger?
-    * kontraster
+    <!-- * kontraster -->
         <!-- * header logga ej ok grått på grått -->
 
 
@@ -54,7 +53,7 @@ GEMENSAMT:
 
 <!-- * Logga footer utan text kankse... -->
 
-* HEADER: Behöver kanske vara större för att förtydliga vilket företag vi är?
+<!-- * HEADER: Behöver kanske vara större för att förtydliga vilket företag vi är? -->
 
 <!-- * Gå igenom vilka variabler som ej används -->
     <!-- * ex färger -->
@@ -64,7 +63,7 @@ GEMENSAMT:
 
 <!-- * Gå igenom alla flex box --> ändra till mixinen -->
 
-* OM OSS ta bort tidslinje?
+<!-- * OM OSS ta bort tidslinje? -->
 
 * Rensa bilder som ej används
 
@@ -78,7 +77,6 @@ NICE_TO_HAVES:
     *     <link rel="shortcut icon" href="/pictures/mini-logo.png" />
     * OBS! ovan lösning ej komplett
 
-* Tidslinje, historia - koda och lägg till on hoover?
 
 * Meddelande när man skickat form
     * Tack för din förfrågan! Vi återkommer till dig inom kort.
@@ -109,7 +107,6 @@ STINA:
 
 <!-- * Gör aklickbara lönkar kontaktsida som i footer -->
 
-* My kontorsbild
 
 * rensa JS från halvfärdigt projekt
 

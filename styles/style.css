@@ -10127,8 +10127,9 @@ label.panel-block:hover {
     margin-top: auto;
     margin-bottom: 0;
   }
-  #footer .h3 {
-    font-weight: 700;
+  #footer .footer-container > p:first-of-type {
+    font-family: "Libre Baskerville", "Cormorant Garamond", Times, serif;
+    font-weight: 800;
   }
   #footer .fa-brands, #footer .fa-solid {
     color: #000000;
@@ -10152,14 +10153,14 @@ label.panel-block:hover {
   }
   @media (width >= 769px) {
     main {
-      padding: 20px 32px;
+      padding: 24px 32px;
       margin-inline: auto;
       width: min(90%, 70.5rem);
     }
   }
   @media (width >= 1024px) {
     main {
-      padding-top: 74.5px;
+      padding-top: 74.61px;
     }
   }
   .homepage-grid h2 {
@@ -10193,11 +10194,17 @@ label.panel-block:hover {
     align-items: flex-start;
     flex-direction: row;
   }
+  .about-page {
+    padding-top: 36px;
+  }
   .about-page h2 {
     font-size: 1.5rem;
     margin-bottom: 1em;
   }
-  .about-page h2:nth-child(2) {
+  .about-page .employees-grid {
+    padding-top: 36px;
+  }
+  .about-page .employees-grid h2 {
     padding-left: 12px;
   }
   .office {
@@ -10221,9 +10228,12 @@ label.panel-block:hover {
   .office .contact-details div {
     padding: 8px 8px 0;
   }
+  .office .contact-details div.phone {
+    padding-top: 0;
+  }
   .office .contact-details div p span {
     font-family: "Libre Baskerville", "Cormorant Garamond", Times, serif;
-    font-weight: 700;
+    font-weight: 800;
   }
   #valuationForm {
     display: none;

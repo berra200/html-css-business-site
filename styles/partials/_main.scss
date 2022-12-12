@@ -7,12 +7,12 @@ main {
     padding: 24px 12px;
     
     @media ($tablet) {
-        padding: 20px 32px;
+        padding: 24px 32px;
         margin-inline: auto;
         width: min(90%, 70.5rem);
     }
     @media ($desktop) {
-        padding-top: 74.5px;
+        padding-top: 74.61px;
     }
 }
 
@@ -61,12 +61,16 @@ main {
 };
 
 .about-page {
+    padding-top: 36px;
     h2 {
         font-size: 1.5rem;
         margin-bottom: 1em;
     };
-    h2:nth-child(2) {
-        padding-left: 12px;
+    .employees-grid {
+        h2 {
+            padding-left: 12px;
+        };
+        padding-top: 36px;
     };
 };
 //!NYTT slut
@@ -92,9 +96,12 @@ main {
     .contact-details{
         div {
             padding: 8px 8px 0;
+            &.phone {
+                padding-top: 0;
+            };
             p span { 
                 font-family: $family-primary;
-                font-weight: 700;
+                font-weight: 800;
             };
         };
     };
