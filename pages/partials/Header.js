@@ -1,7 +1,7 @@
 let header = document.querySelector("#header")
 
 header.innerHTML = `
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<nav class="navbar" aria-label="main navigation">
     <div class="navbar-brand">
         <!--Logga-->  
         <a class="navbar-item nav-logo" href="/">

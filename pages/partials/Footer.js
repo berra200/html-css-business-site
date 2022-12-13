@@ -84,7 +84,7 @@ footer.innerHTML = `
                     </div>
                 </div>
             </a>
-        </div class="column">
+        </div>
         <!--FÖLJ OSS-->
         <div class="column is-2-tablet footer-container">
             <p>FÖLJ OSS</p>
