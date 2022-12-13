@@ -118,13 +118,17 @@
                 </div>
                 <div class="columns">
 
+
+
                     <!-- TEL -->
                     <div class="field column">
                         <label class="label" for="phoneNum">Telefonnummer<sup>*</sup></label>
                         <div class="control">
-                            <input class="input" id="phoneNum" name="phoneNum" type="tel" pattern="\d*" placeholder="0707343434" required/>
+                            <input class="input" id="phoneNum" name="phoneNum" type="tel" pattern="\d*" placeholder="0707343434" aria-describedby="tel-description" required/>
+                            <p id="tel-description" class="help">Ange inte landskod</p>
                         </div>
                     </div>
+
                     <div class="field column">
                         <label class="label" for="squareMeter">Kvadratmeter<sup>*</sup></label>
                         <div class="control">

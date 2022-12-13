@@ -10024,6 +10024,10 @@ label.panel-block:hover {
   body {
     min-height: 100%;
     background-color: #EAE7DC;
+    display: flex;
+    justify-content: default;
+    align-items: default;
+    flex-direction: column;
   }
   .columns {
     margin: 0;
@@ -10209,6 +10213,9 @@ label.panel-block:hover {
     .about-page .history section {
       padding: 0 48px;
     }
+    .about-page .history p {
+      padding-bottom: 0.75rem;
+    }
   }
   .office {
     padding-bottom: 12px;
@@ -10349,12 +10356,8 @@ label.panel-block:hover {
     margin-bottom: 1em;
   }
   .navbar-brand {
-    background-color: #D9D9D9;
+    background-color: #d6c2b1;
     border-bottom: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: row;
     width: 100vw;
     position: fixed;
     top: 0;
@@ -10363,19 +10366,28 @@ label.panel-block:hover {
     position: absolute;
     right: 0;
   }
+  @media (width >= 1024px) {
+    .navbar-brand {
+      background-color: #EAE7DC;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: row;
+    }
+  }
   .navbar-menu .navbar-start {
     position: fixed;
     top: 52px;
     width: 100vw;
     border-bottom: 1px solid #000000;
-    background-color: #D9D9D9;
+    background-color: #d6c2b1;
   }
   .navbar-menu .navbar-start .navbar-item {
     border-top: 1px solid #000000;
     font-family: "Libre Baskerville", "Cormorant Garamond", Times, serif;
   }
   .navbar-menu .navbar-start .navbar-item:hover {
-    background-color: #d6c2b1;
+    background-color: #f0e9e3;
     border-left: 1px solid #000000;
     border-right: 1px solid #000000;
   }
@@ -10387,7 +10399,12 @@ label.panel-block:hover {
       flex-direction: row;
     }
     .navbar-menu .navbar-start .navbar-item {
-      border: none;
+      border: 1px solid transparent;
+    }
+    .navbar-menu .navbar-start .navbar-item.active {
+      background-color: #f0e9e3;
+      border-right: 1px solid black;
+      border-left: 1px solid black;
     }
   }
   .hero.has-background {

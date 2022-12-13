@@ -1,15 +1,17 @@
-
 // Logga div
 .navbar-brand {
-    background-color: $headerClr;
+    background-color: $selected;
     border-bottom: 1px solid black;
-    @include flex($justify: center);
     width: 100vw;
     position: fixed;
     top: 0;
     .navbar-burger {
         position: absolute;
         right: 0;
+    };
+    @media ($desktop) {
+        background-color: $backgroundClr;
+        @include flex(center);
     };
 };
 
@@ -20,23 +22,29 @@
         top: 52px;       
         width: 100vw;
         border-bottom: 1px solid $textClr;
-        background-color: $headerClr;
+        background-color: $selected;
+
         .navbar-item {
             border-top: 1px solid $textClr;
             font-family: $family-primary;
             &:hover {
-                background-color: $selected;
+                background-color: lighten($selected, 15%);
                 border-left: 1px solid $textClr;
                 border-right: 1px solid $textClr;
-            }
+            };
         };
+
         @media ($desktop) {
             @include flex (space-around, center); 
             .navbar-item {
-                border: none;
+                border: 1px solid transparent;
+                &.active {
+                    background-color: lighten($selected, 15%);
+                    border-right: 1px solid black;
+                    border-left: 1px solid black;
+                }
             };
         };
     };
-
-}
+};
 

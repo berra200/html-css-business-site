@@ -40,7 +40,7 @@ let allNavLinks = document.querySelectorAll(".page");
 
 let dropdown = document.querySelector("#subjectDropdown");
 
-dropdown.addEventListener("change", () => {
+dropdown && dropdown.addEventListener("change", () => {
   
   let valuationForm = document.querySelector("#valuationForm");
   let allInputFieldsValuation = document.querySelectorAll(".input-valuation");
