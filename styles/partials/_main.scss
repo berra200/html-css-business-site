@@ -75,6 +75,10 @@ main {
             section {
                 padding: 0 48px;
             }
+
+            p {
+                padding-bottom: 0.75rem;
+            }
         };
     };
 };
@@ -132,12 +136,7 @@ main {
                 margin-top: 12px;
         };
         .object-img {
-            //! Funkar ej
-            // @include imgAdjuster(default, default, default, default);
-            width: 100%;
-            min-height: 100%;
-            object-fit: cover;
-            vertical-align: middle;
+            @include imgAdjuster();
             @media ($tablet) {
                 max-height: 250px;
             };

@@ -7,11 +7,9 @@ body {
     min-height: 100%;
     background-color: $backgroundClr;
 
-    //! ytterligare mixin som ej funkar >:-(
-    // @include flex($direction: column);
-    // display: flex;
-    // flex-direction: column; 
+    @include flex(default, default, column);
 };
+
 
 
 .columns {
@@ -19,7 +17,6 @@ body {
 };
 
 //TEXT STYLING
-
 h1, h2, h3, h4 {
     font-family: $family-primary;
     color: $textClr;
@@ -81,7 +78,6 @@ a:hover:not(.btn-large) {
     &:hover, &:focus {
         @include animation(switchClr);		
     };
-    
     @media ($desktop) {
         width: 353px;
     };
@@ -96,8 +92,6 @@ a.anchor {
         top: -90px;
     };
 };
-
-
 
 //ANIMATION
 
