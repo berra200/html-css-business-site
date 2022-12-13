@@ -52,7 +52,7 @@ GEMENSAMT:
         * om oss
         * testemonials
 
-* ta bort alla dumma kommentarer
+<!-- * ta bort alla dumma kommentarer -->
 
 <!-- * Logga footer utan text kankse... -->
 
@@ -111,25 +111,24 @@ STINA:
 <!-- * Gör aklickbara lönkar kontaktsida som i footer -->
 
 
-* rensa JS från halvfärdigt projekt
+<!-- * rensa JS från halvfärdigt projekt -->
 
 * Ändra alla bilder + texter kcontact + property
 
-* Ändra texterna på property + contact
+<!-- * Ändra texterna på property + contact -->
 
 <!-- * Förstärka hoover effekt bild porperty
     * opacity bild vitt skynke 
     * border
     * curser pointer på hela -->
 
-* Gör text produkt sida med länk till kontakt för värdering
 
-* göra välja ärende till required
+<!-- * göra välja ärende till required -->
 
 * styla required när ej ifyllt
 
-* lägg till sup
+<!-- * lägg till sup
     -ä rensa js om ej funkar
-    - även rensa formuläret default från asterixer * då
+    - även rensa formuläret default från asterixer * då -->
 
-* rensa required på / lägga till reuired form sälj med oss
+<!-- * rensa required på / lägga till reuired form sälj med oss -->

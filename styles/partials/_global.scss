@@ -1,5 +1,4 @@
 
-// Grund för footer
 html {
     height: 100%;
 };
@@ -10,8 +9,8 @@ body {
 
     //! ytterligare mixin som ej funkar >:-(
     // @include flex($direction: column);
-    display: flex;
-    flex-direction: column; 
+    // display: flex;
+    // flex-direction: column; 
 };
 
 
@@ -21,7 +20,6 @@ body {
 
 //TEXT STYLING
 
-//!använder vi h3/h4:or
 h1, h2, h3, h4 {
     font-family: $family-primary;
     color: $textClr;
@@ -66,7 +64,7 @@ a:hover:not(.btn-large) {
     width: 150px;
     height: 35px;
     &:hover, &:focus {
-        @include changeClr();		
+        @include animation(switchClr);		
     };
 };
 
@@ -81,7 +79,7 @@ a:hover:not(.btn-large) {
     height: 35px;
     width: 270px;
     &:hover, &:focus {
-        @include changeClr();		
+        @include animation(switchClr);		
     };
     
     @media ($desktop) {

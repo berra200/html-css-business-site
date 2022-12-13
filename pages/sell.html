@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakta oss - Anrika Fastigheter</title>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Sälj med oss - Anrika Fastigheter</title>
     
     <!-- FONTER & IKONER -->
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -17,12 +17,10 @@
     <script defer src="../index.js"></script>
     <script defer src="/pages/partials/Footer.js"></script>
     <script defer src="/pages/partials/Header.js"></script>
-    <!--todo: ikon för webbläsarfönstret-->
 
 </head>
 <body>
     <header id="header"></header> 
-
 
     <main class="sell-page">
 
@@ -39,10 +37,10 @@
             </section>
         </div>
 
-        <div class="services">
+        <article class="services">
             <h2>TJÄNSTER</h2>
             <div class="columns">
-                <div class="column" >
+                <section class="column" >
                     <h3>Kostnadsfritt grundpaket</h3>
                     <div class="content">
                         <ul>
@@ -51,9 +49,9 @@
                             <li>Deklarationshjälp</li>
                         </ul>
                     </div>
-                </div>
-                <div class="column" >
-                    <h3>Bonuspaktetet enligt offert</h3>
+                </section>
+                <section class="column" >
+                    <h3>Bonuspaket enligt offert</h3>
                     <div class="content">
                         <ul>
                             <li>Styling</li>
@@ -61,131 +59,131 @@
                             <li>Underhandsförsäljning</li>
                         </ul>
                     </div>
-                </div>
+                </section>
             </div>
-        </div>
+        </article>
 
 
             
-            <a class="anchor" id="contact-anchor"></a>
+        <a class="anchor" id="contact-anchor"></a>
 
-            <div class="contact-form">
-                <div class="form-header">
-                    <p>FUNDERAR DU PÅ ATT SÄLJA?</p>
-                    <h2>VI ÄR NYFIKNA PÅ DIN BOSTAD</h2>
-                    <p> Fyll i dina bostads- och kontaktuppgifter. <br/>Vi kontaktar dig efter genomförd förfrågan.</p>
+        <div class="contact-form">
+            <div class="form-header">
+                <p>FUNDERAR DU PÅ ATT SÄLJA?</p>
+                <h2>VI ÄR NYFIKNA PÅ DIN BOSTAD</h2>
+                <p> Fyll i dina bostads- och kontaktuppgifter. <br/>Vi kontaktar dig efter genomförd förfrågan.</p>
+            </div>
+            <form>
+                <div class="columns">
+
+                    <!-- FÖRNAMN -->
+                    <div class="field column">
+                        <label class="label" for="fName">Förnamn<sup>*</sup></label>
+                        <div class="control">
+                            <input class="input" id="fName" name="fName" type="text" placeholder="Förnamn" autocomplete="given-name" required/>
+                        </div>
+                    </div>
+
+                    <!-- EFTERNAMN -->
+                    <div class="field column">
+                        <label class="label" for="lName"> Efternamn<sup>*</sup></label>
+                        <div class="control">
+                            <input class="input" id="lName" name="lName" type="text" placeholder="Efternamn" autocomplete="family-name" required/>
+                        </div>
+                    </div>
                 </div>
-                <form>
-                    <div class="columns">
+                <div class="columns">
 
-                        <!-- FÖRNAMN -->
-                        <div class="field column">
-                            <label class="label" for="fName">Förnamn<sup>*</sup></label>
-                            <div class="control">
-                                <input class="input" id="fName" name="fName" type="text" placeholder="Förnamn" autocomplete="given-name" required/>
-                            </div>
-                        </div>
-
-                        <!-- EFTERNAMN -->
-                        <div class="field column">
-                            <label class="label" for="lName"> Efternamn<sup>*</sup></label>
-                            <div class="control">
-                                <input class="input" id="lName" name="lName" type="text" placeholder="Efternamn" autocomplete="family-name" required/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="columns">
-
-                        <!-- EPOST -->
-                        <div class="field column is-7">
-                            <label class="label" for="emailInput"> E-post<sup>*</sup></label>
-                            <div class="control">
-                                <input class="input" name="emailInput" id="emailInput" type="email" placeholder="E-post" autocomplete="email" required/>
-                            </div>
-                        </div>
-
-                        <!-- PAKET -->
-                        <div class="field column is-5">
-                            <label class="label" for="packageDropdown">Välj paket</label>
-                            <div class="control">
-                                <div class="select">
-                                    <select name="packageDropdown" id="packageDropdown">
-                                        <option value="1" disabled selected hidden>Välj paket</option>
-                                        <option value="1">Grundpaket</option>
-                                        <option value="2">Bonuspaket</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="columns">
-
-                        <!-- TEL -->
-                        <div class="field column">
-                            <label class="label" for="phoneNum">Telefonnummer</label>
-                            <div class="control">
-                                <input class="input" id="phoneNum" name="phoneNum" type="tel" pattern="\d*" placeholder="0707343434"/>
-                            </div>
-                        </div>
-                        <div class="field column">
-                            <label class="label" for="squareMeter">Kvadratmeter</label>
-                            <div class="control">
-                                <input class="input" id="squareMeter" name="squareMeter" type="number" placeholder="Antal kvadratmeter" />
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- ADRESS -->
-                    <div class="field">
-                        <label class="label" for="adressInput">Gatuadress</label>
+                    <!-- EPOST -->
+                    <div class="field column is-7">
+                        <label class="label" for="emailInput"> E-post<sup>*</sup></label>
                         <div class="control">
-                            <input class="input" id="adressInput" name="adressInput" type="text" placeholder="Grevturegatan 6" autocomplete="street-address" />
+                            <input class="input" name="emailInput" id="emailInput" type="email" placeholder="E-post" autocomplete="email" required/>
                         </div>
                     </div>
-                    <div class="columns">
 
-                        <!-- POSTNMR -->
-                        <div class="field column">
-                            <label class="label" for="zipCode">Postnummer</label>
-                            <div class="control">
-                                <input class="input" id="zipCode" name="zipCode" type="number"  placeholder="11446" autocomplete="postal-code" />
-                            </div>
-                        </div>
-
-                        <!-- STAD -->
-                        <div class="field column">
-                            <label class="label" for="cityInput">Stad</label>
-                            <div class="control">
-                                <input class="input" id="cityInput" name="cityInput" type="text" placeholder="Stad" autocomplete="address-level2" />
+                    <!-- PAKET -->
+                    <div class="field column is-5">
+                        <label class="label" for="packageDropdown">Välj paket<sup>*</sup></label>
+                        <div class="control">
+                            <div class="select">
+                                <select name="packageDropdown" id="packageDropdown" required>
+                                    <option value="" disabled selected hidden>Välj paket</option>
+                                    <option value="1">Grundpaket</option>
+                                    <option value="2">Bonuspaket</option>
+                                </select>
                             </div>
                         </div>
                     </div>
-    
-    
-                    <!-- FRITEXT -->
-                    <div class="field">
-                        <label class="label" for="message">Meddelande</label>
+                </div>
+                <div class="columns">
+
+                    <!-- TEL -->
+                    <div class="field column">
+                        <label class="label" for="phoneNum">Telefonnummer<sup>*</sup></label>
                         <div class="control">
-                            <textarea class="textarea" id="message" placeholder="Skriv ditt meddelande"></textarea>
+                            <input class="input" id="phoneNum" name="phoneNum" type="tel" pattern="\d*" placeholder="0707343434" required/>
                         </div>
                     </div>
-            
-                    <!-- CHECKBOX -->
-                    <div class="field">
+                    <div class="field column">
+                        <label class="label" for="squareMeter">Kvadratmeter<sup>*</sup></label>
                         <div class="control">
-                            <input type="checkbox" name="terms" id="terms" required/>
-                            <label for="terms">Jag godkänner Anrika Fastigheters användarvillkor och personuppgiftspolicy<sup>*</sup></label>
+                            <input class="input" id="squareMeter" name="squareMeter" type="number" placeholder="Antal kvadratmeter" required />
                         </div>
                     </div>
+                </div>
+
+                <!-- ADRESS -->
+                <div class="field">
+                    <label class="label" for="adressInput">Gatuadress<sup>*</sup></label>
+                    <div class="control">
+                        <input class="input" id="adressInput" name="adressInput" type="text" placeholder="Grevturegatan 6" autocomplete="address-line1" required/>
+                    </div>
+                </div>
+                <div class="columns">
+
+                    <!-- POSTNMR -->
+                    <div class="field column">
+                        <label class="label" for="zipCode">Postnummer<sup>*</sup></label>
+                        <div class="control">
+                            <input class="input" id="zipCode" name="zipCode" type="text" pattern="\d*" minLength="5" maxLength="5" placeholder="11446" autocomplete="postal-code" required/>
+                        </div>
+                    </div>
+
+                    <!-- STAD -->
+                    <div class="field column">
+                        <label class="label" for="cityInput">Stad<sup>*</sup></label>
+                        <div class="control">
+                            <input class="input" id="cityInput" name="cityInput" type="text" placeholder="Stad" autocomplete="address-level2" required />
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- FRITEXT -->
+                <div class="field">
+                    <label class="label" for="message">Meddelande</label>
+                    <div class="control">
+                        <textarea class="textarea" id="message" placeholder="Skriv ditt meddelande"></textarea>
+                    </div>
+                </div>
         
-                    <!-- KNAPP -->
-                    <div class="field">
-                        <div class="control has-text-centered">
-                            <button class="button btn-small" type="submit">SKICKA</button>
-                        </div>
+                <!-- CHECKBOX -->
+                <div class="field">
+                    <div class="control">
+                        <input type="checkbox" name="terms" id="terms" required/>
+                        <label for="terms">Jag godkänner Anrika Fastigheters användarvillkor och personuppgiftspolicy<sup>*</sup></label>
                     </div>
-                </form>
-            </div>
+                </div>
+    
+                <!-- KNAPP -->
+                <div class="field">
+                    <div class="control has-text-centered">
+                        <button class="button btn-small" type="submit">SKICKA</button>
+                    </div>
+                </div>
+            </form>
+        </div>
 
     </main>
 
@@ -193,4 +191,5 @@
     <footer id="footer"></footer> 
 
 </body>
+
 </html>

@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-// NAV: hittar akutell sida anv. befinner sig på och kastar på klassen "active" på a-taggen.
+// NAV - Aktuell sida
 document.addEventListener("DOMContentLoaded", () => {
 let currentPage = location.href;
 let allNavLinks = document.querySelectorAll(".page");
@@ -36,7 +36,7 @@ let allNavLinks = document.querySelectorAll(".page");
   
 });
 
-// Display av värdering-formulär
+// Display - Värdering-formulär
 
 let dropdown = document.querySelector("#subjectDropdown");
 
@@ -45,12 +45,14 @@ dropdown.addEventListener("change", () => {
   let valuationForm = document.querySelector("#valuationForm");
   let allInputFieldsValuation = document.querySelectorAll(".input-valuation");
 
-  if (dropdown.value === "4") {
+
+  if (dropdown.value === "3") {
     valuationForm.style.display = "block";
+
 
     allInputFieldsValuation.forEach((input) => {
       input.required = true;
-
+      
     });
 
   } else {
