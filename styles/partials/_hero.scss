@@ -1,6 +1,6 @@
 .hero {
     &.has-background {
-        background-image: url('/pictures/P1.jpeg');
+        background-image: url('/pictures/sliderx.jpeg');
         background-position: center center;
         background-size: cover;
     };
@@ -19,7 +19,6 @@
         };
     };
 
-    
     .slogan {
         font-family: $family-primary;
         font-weight: 600;

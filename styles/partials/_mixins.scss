@@ -12,8 +12,8 @@
     vertical-align: $vAlign;
 };
 
-@mixin changeClr ($duration: 1.5s, $fillMode: forwards ) {
-    animation-name: switchClr;
+@mixin animation ($name ,$duration: 1.5s, $fillMode: forwards ) {
+    animation-name: $name;
     animation-duration: $duration;
     animation-fill-mode: $fillMode; 
-}
+};

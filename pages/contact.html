@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Kontakta oss - Anrika Fastigheter</title>
     
     <!-- FONTER & IKONER -->
@@ -17,7 +17,6 @@
     <script defer src="../index.js"></script>
     <script defer src="/pages/partials/Footer.js"></script>
     <script defer src="/pages/partials/Header.js"></script>
-    <!--todo: ikon för webbläsarfönstret-->
 
 </head>
 <body>
@@ -58,10 +57,7 @@
                     </div>
                 </div>
             </div>
-
         </div>
-
-
 <!-- FORM -->
         <div class="contact-form" >
             <div class="form-header">
@@ -77,7 +73,7 @@
                         </div>
                     </div>
                     <div class="field column">
-                        <label class="label" for="lName"> Efternamn<sup>*</sup></label>
+                        <label class="label" for="lName">Efternamn<sup>*</sup></label>
                         <div class="control">
                             <input class="input" id="lName" name="lName" type="text" placeholder="Efternamn" autocomplete="family-name" required/>
                         </div>
@@ -85,20 +81,20 @@
                 </div>
                 <div class="columns">
                     <div class="field column is-7">
-                        <label class="label" for="emailInput"> E-post<sup>*</sup></label>
+                        <label class="label" for="emailInput">E-post<sup>*</sup></label>
                         <div class="control">
                             <input class="input" name="emailInput" id="emailInput" type="email" placeholder="E-post" autocomplete="email" required/>
                         </div>
                     </div>
                     <div class="field column is-5">
-                        <label class="label" for="subjectDropdown">Välj ärende</label>
+                        <label class="label" for="subjectDropdown">Välj ärende<sup>*</sup></label>
                         <div class="control">
                             <div class="select">
-                                <select name="subjectDropdown" id="subjectDropdown">
-                                    <option value="1" disabled selected hidden>Välj ärende</option>
-                                    <option value="2">Frågor om företaget</option>
-                                    <option value="3">Synpunkter på hemsidan</option>
-                                    <option value="4">Kostnadsfri värdering</option>
+                                <select name="subjectDropdown" id="subjectDropdown" required>
+                                    <option value="" disabled selected hidden>Välj ärende</option>
+                                    <option value="1">Frågor om företaget</option>
+                                    <option value="2">Synpunkter på hemsidan</option>
+                                    <option value="3">Kostnadsfri värdering</option>
                                 </select>
                             </div>
                         </div>
@@ -113,13 +109,13 @@
                 <div class="columns">
                     <!-- TEL -->
                     <div class="field column">
-                        <label class="label" for="phoneNum">Telefonnummer</label>
+                        <label class="label lbl-val" for="phoneNum">Telefonnummer<sup>*</sup></label>
                         <div class="control">
                             <input class="input input-valuation" id="phoneNum" name="phoneNum" type="tel" pattern="\d*" placeholder="0707343434"/>
                         </div>
                     </div>
                     <div class="field column">
-                        <label class="label" for="squareMeter">Kvadratmeter</label>
+                        <label class="label lbl-val" for="squareMeter">Kvadratmeter<sup>*</sup></label>
                         <div class="control">
                             <input class="input input-valuation" id="squareMeter" name="squareMeter" type="number" placeholder="Antal kvadratmeter" />
                         </div>
@@ -127,22 +123,22 @@
                 </div>
                 <!-- ADRESS -->
                 <div class="field">
-                    <label class="label" for="adressInput">Gatuadress</label>
+                    <label class="label lbl-val" for="adressInput">Gatuadress<sup>*</sup></label>
                     <div class="control">
-                        <input class="input input-valuation" id="adressInput" name="adressInput" type="text" placeholder="Grevturegatan 6" autocomplete="street-address"/>
+                        <input class="input input-valuation" id="adressInput" name="adressInput" type="text" placeholder="Grevturegatan 6" autocomplete="address-line1"/>
                     </div>
                 </div>
                 <div class="columns">
                     <!-- POSTNMR -->
                     <div class="field column">
-                        <label class="label" for="zipCode">Postnummer</label>
+                        <label class="label lbl-val" for="zipCode">Postnummer<sup>*</sup></label>
                         <div class="control">
-                            <input class="input input-valuation" id="zipCode" name="zipCode" type="number"  placeholder="11446" autocomplete="postal-code" />
+                            <input class="input input-valuation" id="zipCode" name="zipCode" type="text" pattern="\d*" minLength="5" maxLength="5"  placeholder="11446" autocomplete="postal-code" />
                         </div>
                     </div>
                     <!-- STAD -->
                     <div class="field column">
-                        <label class="label" for="cityInput">Stad</label>
+                        <label class="label lbl-val" for="cityInput">Stad<sup>*</sup></label>
                         <div class="control">
                             <input class="input input-valuation" id="cityInput" name="cityInput" type="text" placeholder="Stad" autocomplete="address-level2"/>
                         </div>

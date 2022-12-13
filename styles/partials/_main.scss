@@ -46,8 +46,6 @@ main {
 }
 
 //ABOUT MAIN
-
-//!NYTT
 .about-page-hero {
     .hero {
         &.has-background {
@@ -72,8 +70,14 @@ main {
         };
         padding-top: 36px;
     };
+    @media($desktop) {
+        .history {
+            section {
+                padding: 0 48px;
+            }
+        };
+    };
 };
-//!NYTT slut
 
 
 
@@ -129,7 +133,7 @@ main {
         };
         .object-img {
             //! Funkar ej
-            // @include imgAdjuster();
+            // @include imgAdjuster(default, default, default, default);
             width: 100%;
             min-height: 100%;
             object-fit: cover;
@@ -166,7 +170,6 @@ main {
 
 
 // SÄLJ MED OSS
-
 .sell-page {
     .sell-page-hero {
         .hero {
@@ -193,9 +196,6 @@ main {
         .column {
             @media ($tablet) {
                 @include flex(default, center, column);
-                &:nth-child(2) {
-                    margin-top: 125px;
-                };
             };
         };
     };

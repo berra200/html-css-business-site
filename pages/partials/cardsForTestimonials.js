@@ -14,7 +14,7 @@ let soldObjects = [
     {
         address: "BELLMANSGATAN 12",
         image: "sold3.jpeg",
-        quote: "Träffsäkra estimat med rätt engagemang och kompetens för att nå dem.",
+        quote: "Träffsäkert estimat med rätt engagemang och kompetens för att nå dit.",
         name: "Lena Philipsson",
     },
     {

@@ -10024,8 +10024,6 @@ label.panel-block:hover {
   body {
     min-height: 100%;
     background-color: #EAE7DC;
-    display: flex;
-    flex-direction: column;
   }
   .columns {
     margin: 0;
@@ -10207,6 +10205,11 @@ label.panel-block:hover {
   .about-page .employees-grid h2 {
     padding-left: 12px;
   }
+  @media (width >= 1024px) {
+    .about-page .history section {
+      padding: 0 48px;
+    }
+  }
   .office {
     padding-bottom: 12px;
   }
@@ -10339,9 +10342,6 @@ label.panel-block:hover {
       align-items: center;
       flex-direction: column;
     }
-    .sell-page .services .column:nth-child(2) {
-      margin-top: 125px;
-    }
   }
   .sell-page .form-header p:first-child {
     font-family: "Libre Baskerville", "Cormorant Garamond", Times, serif;
@@ -10391,7 +10391,7 @@ label.panel-block:hover {
     }
   }
   .hero.has-background {
-    background-image: url("/pictures/P1.jpeg");
+    background-image: url("/pictures/sliderx.jpeg");
     background-position: center center;
     background-size: cover;
   }
@@ -10412,7 +10412,7 @@ label.panel-block:hover {
     font-size: small;
   }
   .contact-form {
-    background-color: #dff2f7;
+    background-color: #f0e9e3;
     padding: 12px;
   }
   .contact-form .form-header {
@@ -10435,6 +10435,7 @@ label.panel-block:hover {
   }
   .contact-form form .field input:focus, .contact-form form .field select:focus, .contact-form form .field option:focus, .contact-form form .field textarea:focus {
     border-color: #3cb0ce;
+    background-color: #dff2f7;
   }
   .contact-form form .field input[type=checkbox] {
     accent-color: #3cb0ce;
