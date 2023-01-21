@@ -11,32 +11,32 @@ footer.innerHTML = `
                 <div class="column">
                     <ul>
                         <li>
-                            <a class="page" href="/index.html">
+                            <a class="page" href="../../index.html">
                                 HEM
                             </a>
                         </li>
                         <li>
-                            <a class="page" href="/pages/properties.html">
+                            <a class="page" href="../pages/properties.html">
                                 TILL SALU
                             </a>
                         </li>
                         <li>
-                            <a class="page" href="/pages/sell.html">
+                            <a class="page" href="../pages/sell.html">
                                 SÄLJ MED OSS
                             </a>
                         </li>
                         <li>
-                            <a class="page" href="/pages/testimonials.html">
+                            <a class="page" href="../pages/testimonials.html">
                                 SÅLDA OBJEKT
                             </a>
                         </li>
                         <li>
-                            <a class="page" href="/pages/contact.html">
+                            <a class="page" href="../pages/contact.html">
                                 KONTAKT
                             </a>
                         </li>
                         <li>
-                            <a class="page" href="/pages/about.html">
+                            <a class="page" href="../pages/about.html">
                                 OM OSS
                             </a>
                         </li>
